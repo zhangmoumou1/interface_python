@@ -1,2 +1,63 @@
-# interface_python
-pythonæ¥å£è‡ªåŠ¨åŒ–æµ‹è¯•æ¡†æ¶
+# interface-python
+## Ò»¡¢ÊµÏÖ·½·¨<br>
+×¢£ºÔËĞĞ´ËÏîÄ¿Ç°£¬ÏÈĞŞ¸Äconfig.iniµÄÂ·¾¶£¬´ËÂ·¾¶ÎªÏîÄ¿±¾µØÂ·¾¶<br>
+<br>
+1.Í¨¹ıpython+flask±àĞ´Restful API£¬·½±ãµ÷ÊÔ´Ë¿ò¼Ü<br>
+<br>
+2.ÔËĞĞRestful_ApiÏÂµÄresfulapi.py£¬¿ÉÏÈÍ¨¹ıpostman»òÆäËû½Ó¿Ú¹¤¾ß×Ô²â½Ó¿ÚÊÇ·ñÔËĞĞÕı³££¬Í£Ö¹ÔËĞĞ¿É½áÊø½ø³Ì£¬<br>
+¾ßÌåÇëÇó½á¹û¿É²é¿´²©¿Íhttp://www.zhangyanc.club/blog/82<br>
+<br>
+3.Ê¹ÓÃpythonµÄrequestsÄ£¿éÇëÇó½Ó¿Ú£¬¹Ù·½ÎÄµµhttp://docs.python-requests.org/zh_CN/latest/user/quickstart.html<br>
+<br>
+4.ÕâÀïÊ¹ÓÃddtÊı¾İÇı¶¯¶ÁÈ¡ExcelÖĞµÄ²âÊÔÓÃÀıÖ´ĞĞ<br>
+<br>
+5.Êä³ö²âÊÔ±¨¸æºÍÈÕÖ¾<br>
+
+## ¶ş¡¢¿ò¼ÜÄ¿Â¼µÄ½²½â<br>
+![no view](https://github.com/zhangmoumou1/interface-python/blob/master/readme/%E6%9E%B6%E6%9E%84%E5%9B%BE.jpg)<br>
+<br>
+1.PublicºÍbranchÎÄ¼ş¼ĞÖ÷ÒªĞ´Ò»Ğ©¹«¹²¡¢´¦Àí·½·¨,ÈçÇëÇóµÄ¶ş´Î·â×°¡¢»ñÈ¡ExcelÊı¾İ¡¢ÈÕÖ¾Êä³ö¡¢²âÊÔ±¨¸æÓÅ»¯,ÅäÖÃÎÄ¼ş¶ÁÈ¡µÈ;<br>
+<br>
+2.Restful_ApiÎÄ¼ş¼ĞÎª½Ó¿ÚµÄÊµÏÖ£¬ÔËĞĞresfulapi.py,Í¨¹ıpostmanÇëÇóÑéÖ¤;<br>
+<br>
+![no view](https://github.com/zhangmoumou1/interface-python/blob/master/readme/postman.jpg)<br>
+<br>
+3.configÎÄ¼ş¼ĞÓÃÀı¹ÜÀíÂ·¾¶,config.iniÎªÏîÄ¿µÄÖ÷Â·¾¶,globalparam.pyÎªÈÕÖ¾ÎÄ¼ş¡¢²âÊÔÓÃÀı¶ÁÈ¡ºÍ´æ´¢µÄÂ·¾¶;<br>
+<br>
+4.reportÎÄ¼ş¼ĞÏÂ´æ·ÅÈÕÖ¾ºÍ²âÊÔ±¨¸æ;<br>
+<br>
+![no view](https://github.com/zhangmoumou1/interface-python/blob/master/readme/%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A.jpg)<br>
+<br>
+![no view](https://github.com/zhangmoumou1/interface-python/blob/master/readme/%E6%97%A5%E5%BF%97.jpg)<br>
+<br>
+5.testCaseÎÄ¼ş¼ĞĞ´ÁË²âÊÔÓÃÀı,Í¨¹ıddtÊı¾İÇı¶¯¶ÁÈ¡ExcelÎÄ¼ş,ÓÃunittestµ¥Ôª²âÊÔ¿ò¼Ü¹ÜÀíÓÃÀı;<br>
+<br>
+6.testdataÎÄ¼şÏÂÊÇ²âÊÔÓÃÀı;<br>
+<br>
+7.ÔËĞĞrun_ddt_case.pyÖ´ĞĞÓÃÀı(Èç¹ûÕû¸öµ÷ÓÃÁ÷³Ì²»Ì«¶®µÄ¿ÉÒÔ¿´readmeÏÂµÄxmindÁ÷³ÌÍ¼)¡£<br>
+
+## Èı¡¢¸üĞÂ¼ÇÂ¼
+### 2018.11.02---¸üĞÂflask½Ó¿Ú´úÂë£¬ÓÃÀıÔö¼Ópost¡¢put¡¢deleteÇëÇó·½Ê½<br>
+1.ÔÚ´ËÖ®Ç°Ö»ÓĞµ¥Ò»µÄget½Ó¿ÚÇëÇó£¬ÍêÉÆÆäËû¼¸ÖÖÇëÇó·½Ê½<br>
+2.ÓÃÀıÖĞ°üÀ¨ÇëÇó³É¹¦ºÍÊ§°ÜµÄ°¸Àı<br>
+### 2018.11.04---ÓÅ»¯Ö§³Ö¶à¶ÏÑÔ£¬¿É¶Ôresultcode¡¢Ö¸¶¨·µ»Ø×Ö¶Î½øĞĞ¶ÏÑÔ<br>
+ÊµÏÖÂß¼­£º<br>
+1.ExcelÖĞĞÂÔö"ÆÚÍû2"ÁĞ£¬Ìá¹©¶ÏÑÔÆÚÍûÖµ<br>
+2.ÇëÇóÏìÓ¦×Ö¶ÎÎª×Öµä¸ñÊ½£¬Ö¸¶¨×Ö¶Î¶ÏÑÔ£¬Ç°ÌáĞè´ÓExcelÆÚÍûÖµÖĞ»ñÈ¡keyÖµ£¬À´Ö¸¶¨·µ»ØÇëÇóµÄvalueÖµ<br>
+3.Èç½Ó¿ÚÖ»¶Ôresultcode¶ÏÑÔ£¬¶ÔExcel¡°ÆÚÍû2¡±ÁĞ²ÎÊıÎª"param=null"×÷ÎªÅĞ¶ÏÒÀ¾İ£¬Ïê¼ûddt_case.py´úÂë<br>
+4.ĞÂÔö¶à¸ö¶ÏÑÔĞèĞŞ¸Ä´úÂë<br>
+### 2018.11.05---Ôö¼Ómysql¡¢oracle¡¢SQLserverÊı¾İ¿âµÄ²Ù×÷<br>
+ÊµÏÖÂß¼­£º<br>
+1.ĞÂÔöreadyaml.py¡¢db.yaml¡¢operate_db.py<br>
+1.Ê¹ÓÃyamlÎÄ¼ş¹ÜÀíÊı¾İ¿âÁ¬½ÓĞÅÏ¢£¨´ËÎª¸öÈË·şÎñÆ÷µÄÊı¾İ¿âÇë²»ÒªËæÒâ¸Ä¶¯Êı¾İ£¬Êı¾İ¿âÈçÓĞÎÊÌâ¿ÉQQÁªÏµ±¾ÈË£©<br>
+2.Í¨¹ı½Ó¿ÚurlºÍÊı¾İ¿âÃû¹ØÁª£¬À´ÅĞ¶ÏÖ´ĞĞ½Ó¿ÚĞè²Ù×÷¶ÔÓ¦¿â<br>
+3.Í¨¹ı½Ó¿ÚurlºÍSQLÓï¾ä¹ØÁª£¬À´ÅĞ¶ÏÖ´ĞĞ½Ó¿ÚËùÒªÖ´ĞĞµÄSQL<br>
+4.ÔÚselect_request.pyÖĞ½øĞĞÊı¾İ¿â²Ù×÷»ñÈ¡ÇëÇóÊı¾İ<br>
+### 2018.11.07---²âÊÔ±¨¸æÓÃÀıÃûµÄÓÅ»¯ºÍ½çÃæÃÀ»¯<br>
+1.Ê¹ÓÃÏÖÓĞµÄddtÊı¾İÇı¶¯²»ÄÜÌåÏÖ¾ßÌåÓÃÀıÃû³Æ£¬ĞŞ¸ÄddtÔ´Âë´ÓExcelÖĞ´«ÈëÓÃÀıÃû£¬²Î¿¼https://www.cnblogs.com/Simple-Small/p/9230382.html<br>
+2.ÔÚÒÔÍù²âÊÔ±¨¸æÉÏÔö¼ÓÍ¨¹ı°Ù·Ö±ÈºÍÆäËûÓÅ»¯<br>
+<br>
+<br>
+<br>
+<br>
+#### ÓĞÎÊÌâÁªÏµQQ£º1392364470

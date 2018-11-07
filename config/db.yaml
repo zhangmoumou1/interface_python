@@ -1,0 +1,27 @@
+interface_db:
+     paydb:
+          - http://127.0.0.1:5000/todos
+          - http://127.0.0.1:5000/todos/todo1
+     orderdb:
+          - http://127.0.0.1:5000/todos/todo2
+          - http://127.0.0.1:5000/todos/todo3
+     contentdb:
+          - http://127.0.0.1:5000/todos/todo4
+          - http://127.0.0.1:5000/todos/todo5
+
+interface_sql:
+     http://127.0.0.1:5000/todos: select content from blog_blog where id = '5'
+     http://127.0.0.1:5000/todos/todo1: select content from blog_blog where id = '6'
+     http://127.0.0.1:5000/todos/todo2: select content from blog_blog where id = '7'
+
+paydb:
+     - 116.62.201.163
+     - testdb
+     - testdb123
+     - paydb
+
+orderdb:
+     - 116.62.201.163
+     - testdb
+     - testdb123
+     - orderdb
