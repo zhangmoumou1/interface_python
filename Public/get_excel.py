@@ -37,7 +37,7 @@ def makedata():
     #import os
     #path = os.getcwd() + '\\test_case_data\\case.xlsx'
     #path = globalparam.data_path + "\\" + "case.xlsx"
-	path = globalparam.data_path + "/" + "case.xlsx"
+    path = globalparam.data_path + "/" + "case.xlsx"
     listid, listname, listkey, listconeent, listparam_place, listurl, listfangshi, listqiwang1, listname, listqiwang2=datacel(path)
     make_data = []
     try:
