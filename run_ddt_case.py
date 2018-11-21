@@ -22,7 +22,7 @@ if __name__ == "__main__":
     # Get the current time in a certain format
     now = time.strftime("%Y-%m-%d-%H-%M-%S")
     # Define the report storage path
-    filename = globalparam.report_path + "\\" + now + "result.html"
+    filename = globalparam.report_path + "/" + "result.html"
     fp = open(filename, 'wb')
     #runner = BSTestRunner.BSTestRunner(stream=fp, title='http接口测试报告', description='测试结果')
     runner = HTMLTestReportCN.HTMLTestRunner(
