@@ -4,7 +4,7 @@
 <br>
 1.通过python+flask编写Restful API，方便调试此框架<br>
 <br>
-2.运行Restful_Api下的resfulapi.py，可先通过postman或其他接口工具自测接口是否运行正常，停止运行可结束进程，<br>
+2.运行Restful_Api下的[resfulapi.py](https://github.com/zhangmoumou1/interface_python/blob/master/Restful_Api/resfulapi.py)，可先通过postman或其他接口工具自测接口是否运行正常，停止运行可结束进程，<br>
 具体请求结果可查看博客http://www.zhangyanc.club/blog/82<br>
 <br>
 3.使用python的requests模块请求接口，官方文档http://docs.python-requests.org/zh_CN/latest/user/quickstart.html<br>
