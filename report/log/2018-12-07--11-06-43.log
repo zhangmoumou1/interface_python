@@ -1,0 +1,213 @@
+2018-12-07 11:06:43,259 - root - INFO - 测试用例开始执行
+2018-12-07 11:06:43,260 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos', 'listname': 'get请求返回resultcode正确', 'key': 1.0, 'coneent': 'not argument', 'param_place': '', 'fangshi': 'GET', 'expect1': 'code=200', 'expect2': 'param=null'}
+2018-12-07 11:06:43,266 - root - INFO - 成功发起GET请求，请求结果code为：200, 请求结果字段为：{
+    "todo1": {
+        "task1": "first request"
+    },
+    "todo2": {
+        "task2": "second request"
+    },
+    "todo3": {
+        "task3": "third request"
+    }
+}
+
+2018-12-07 11:06:43,267 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:1.0,参数:not argument,请求方式：GET
+2018-12-07 11:06:43,268 - root - INFO - 对【code】断言,断言结果--预期值200 == 实际值200
+2018-12-07 11:06:43,268 - root - INFO - 测试用例执行完毕
+2018-12-07 11:06:43,269 - root - INFO - ----------------------------------
+2018-12-07 11:06:43,269 - root - INFO - 测试用例开始执行
+2018-12-07 11:06:43,270 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos/todo2', 'listname': 'put请求返回resultcode和task正确', 'key': 11.0, 'coneent': '{"task":"update success"}', 'param_place': 'database', 'fangshi': 'PUT', 'expect1': 'code=201', 'expect2': 'task=update success'}
+2018-12-07 11:06:43,273 - root - INFO - 当前接口涉及数据库：orderdb
+2018-12-07 11:06:43,508 - root - INFO - 成功登录数据库：orderdb，版本为：8.0.11，执行SQL：select content from blog_blog where id = '7'
+2018-12-07 11:06:43,522 - root - INFO - 查询结果：{"task":"update success"}
+2018-12-07 11:06:43,524 - root - INFO - 数据格式为：{"task":"update success"}
+2018-12-07 11:06:43,534 - root - INFO - 成功发起PUT请求，请求结果code为：201, 请求结果字段为：{'task': 'update success'}
+2018-12-07 11:06:43,535 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo2,key:11.0,参数:{"task":"update success"},请求方式：PUT
+2018-12-07 11:06:43,537 - root - INFO - 对【code】断言,断言结果--预期值201 == 实际值201
+2018-12-07 11:06:43,539 - root - INFO - 对【task】字段断言,断言结果--预期值update success == 实际值update success
+2018-12-07 11:06:43,540 - root - INFO - 测试用例执行完毕
+2018-12-07 11:06:43,541 - root - INFO - ----------------------------------
+2018-12-07 11:06:43,543 - root - INFO - 测试用例开始执行
+2018-12-07 11:06:43,544 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos/todo1', 'listname': 'delete请求成功删除数据', 'key': 12.0, 'coneent': 'not argument', 'param_place': '', 'fangshi': 'DELETE', 'expect1': 'code=204', 'expect2': 'param=null'}
+2018-12-07 11:06:43,550 - root - INFO - 成功发起DELETE请求，请求结果code为：204, 请求结果字段为：
+2018-12-07 11:06:43,550 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo1,key:12.0,参数:not argument,请求方式：DELETE
+2018-12-07 11:06:43,551 - root - INFO - 对【code】断言,断言结果--预期值204 == 实际值204
+2018-12-07 11:06:43,552 - root - INFO - 测试用例执行完毕
+2018-12-07 11:06:43,552 - root - INFO - ----------------------------------
+2018-12-07 11:06:43,553 - root - INFO - 测试用例开始执行
+2018-12-07 11:06:43,553 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos', 'listname': 'get请求返回resultcode正确', 'key': 13.0, 'coneent': 'not argument', 'param_place': '', 'fangshi': 'GET', 'expect1': 'code=200', 'expect2': 'param=null'}
+2018-12-07 11:06:43,557 - root - INFO - 成功发起GET请求，请求结果code为：200, 请求结果字段为：{
+    "todo2": {
+        "task": "update success"
+    },
+    "todo3": {
+        "task3": "third request"
+    }
+}
+
+2018-12-07 11:06:43,558 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:13.0,参数:not argument,请求方式：GET
+2018-12-07 11:06:43,559 - root - INFO - 对【code】断言,断言结果--预期值200 == 实际值200
+2018-12-07 11:06:43,559 - root - INFO - 测试用例执行完毕
+2018-12-07 11:06:43,560 - root - INFO - ----------------------------------
+2018-12-07 11:06:43,560 - root - INFO - 测试用例开始执行
+2018-12-07 11:06:43,561 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos', 'listname': 'get请求返回resultcode不正确', 'key': 14.0, 'coneent': 'not argument', 'param_place': '', 'fangshi': 'GET', 'expect1': 'code=2011', 'expect2': 'param=null'}
+2018-12-07 11:06:43,565 - root - INFO - 成功发起GET请求，请求结果code为：200, 请求结果字段为：{
+    "todo2": {
+        "task": "update success"
+    },
+    "todo3": {
+        "task3": "third request"
+    }
+}
+
+2018-12-07 11:06:43,565 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:14.0,参数:not argument,请求方式：GET
+2018-12-07 11:06:43,566 - root - WARNING - 对【code】断言,断言结果--预期值2011 != 实际值200
+2018-12-07 11:06:43,566 - root - INFO - 测试用例执行完毕
+2018-12-07 11:06:43,567 - root - INFO - ----------------------------------
+2018-12-07 11:06:43,568 - root - INFO - 测试用例开始执行
+2018-12-07 11:06:43,569 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos', 'listname': 'post请求返回resultcode和task正确', 'key': 15.0, 'coneent': '{"task":"fourth request"}', 'param_place': '', 'fangshi': 'POST', 'expect1': 'code=202', 'expect2': 'task=fourth request'}
+2018-12-07 11:06:43,573 - root - INFO - 成功发起POST请求，请求结果code为：202, 请求结果字段为：{'task': 'fourth request'}
+2018-12-07 11:06:43,574 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:15.0,参数:{"task":"fourth request"},请求方式：POST
+2018-12-07 11:06:43,574 - root - INFO - 对【code】断言,断言结果--预期值202 == 实际值202
+2018-12-07 11:06:43,575 - root - INFO - 对【task】字段断言,断言结果--预期值fourth request == 实际值fourth request
+2018-12-07 11:06:43,575 - root - INFO - 测试用例执行完毕
+2018-12-07 11:06:43,576 - root - INFO - ----------------------------------
+2018-12-07 11:06:43,576 - root - INFO - 测试用例开始执行
+2018-12-07 11:06:43,577 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos/todo1', 'listname': 'put请求返回task不正确', 'key': 16.0, 'coneent': '{"task":"put success"}', 'param_place': '', 'fangshi': 'PUT', 'expect1': 'code=201', 'expect2': 'task=put succ'}
+2018-12-07 11:06:43,581 - root - INFO - 成功发起PUT请求，请求结果code为：201, 请求结果字段为：{'task': 'put success'}
+2018-12-07 11:06:43,582 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo1,key:16.0,参数:{"task":"put success"},请求方式：PUT
+2018-12-07 11:06:43,582 - root - INFO - 对【code】断言,断言结果--预期值201 == 实际值201
+2018-12-07 11:06:43,583 - root - WARNING - 对【task】字段断言,断言结果--预期值put succ != 实际值put success
+2018-12-07 11:06:43,583 - root - INFO - 测试用例执行完毕
+2018-12-07 11:06:43,584 - root - INFO - ----------------------------------
+2018-12-07 11:06:43,584 - root - INFO - 测试用例开始执行
+2018-12-07 11:06:43,585 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos/todo2', 'listname': 'put请求返回resultcode和task正确', 'key': 17.0, 'coneent': '{"task":"update success"}', 'param_place': 'database', 'fangshi': 'PUT', 'expect1': 'code=201', 'expect2': 'task=update success'}
+2018-12-07 11:06:43,588 - root - INFO - 当前接口涉及数据库：orderdb
+2018-12-07 11:06:43,651 - root - INFO - 成功登录数据库：orderdb，版本为：8.0.11，执行SQL：select content from blog_blog where id = '7'
+2018-12-07 11:06:43,664 - root - INFO - 查询结果：{"task":"update success"}
+2018-12-07 11:06:43,664 - root - INFO - 数据格式为：{"task":"update success"}
+2018-12-07 11:06:43,669 - root - INFO - 成功发起PUT请求，请求结果code为：201, 请求结果字段为：{'task': 'update success'}
+2018-12-07 11:06:43,669 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo2,key:17.0,参数:{"task":"update success"},请求方式：PUT
+2018-12-07 11:06:43,670 - root - INFO - 对【code】断言,断言结果--预期值201 == 实际值201
+2018-12-07 11:06:43,670 - root - INFO - 对【task】字段断言,断言结果--预期值update success == 实际值update success
+2018-12-07 11:06:43,671 - root - INFO - 测试用例执行完毕
+2018-12-07 11:06:43,672 - root - INFO - ----------------------------------
+2018-12-07 11:06:43,672 - root - INFO - 测试用例开始执行
+2018-12-07 11:06:43,673 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos/todo1', 'listname': 'delete请求成功删除数据', 'key': 18.0, 'coneent': 'not argument', 'param_place': '', 'fangshi': 'DELETE', 'expect1': 'code=204', 'expect2': 'param=null'}
+2018-12-07 11:06:43,677 - root - INFO - 成功发起DELETE请求，请求结果code为：204, 请求结果字段为：
+2018-12-07 11:06:43,677 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo1,key:18.0,参数:not argument,请求方式：DELETE
+2018-12-07 11:06:43,678 - root - INFO - 对【code】断言,断言结果--预期值204 == 实际值204
+2018-12-07 11:06:43,678 - root - INFO - 测试用例执行完毕
+2018-12-07 11:06:43,679 - root - INFO - ----------------------------------
+2018-12-07 11:06:43,679 - root - INFO - 测试用例开始执行
+2018-12-07 11:06:43,680 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos', 'listname': 'get请求返回resultcode不正确', 'key': 2.0, 'coneent': 'not argument', 'param_place': '', 'fangshi': 'GET', 'expect1': 'code=2011', 'expect2': 'param=null'}
+2018-12-07 11:06:43,684 - root - INFO - 成功发起GET请求，请求结果code为：200, 请求结果字段为：{
+    "todo2": {
+        "task": "update success"
+    },
+    "todo3": {
+        "task3": "third request"
+    },
+    "todo4": {
+        "task": "fourth request"
+    }
+}
+
+2018-12-07 11:06:43,684 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:2.0,参数:not argument,请求方式：GET
+2018-12-07 11:06:43,685 - root - WARNING - 对【code】断言,断言结果--预期值2011 != 实际值200
+2018-12-07 11:06:43,686 - root - INFO - 测试用例执行完毕
+2018-12-07 11:06:43,686 - root - INFO - ----------------------------------
+2018-12-07 11:06:43,687 - root - INFO - 测试用例开始执行
+2018-12-07 11:06:43,687 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos', 'listname': 'post请求返回resultcode和task正确', 'key': 3.0, 'coneent': '{"task":"fourth request"}', 'param_place': '', 'fangshi': 'POST', 'expect1': 'code=202', 'expect2': 'task=fourth request'}
+2018-12-07 11:06:43,691 - root - INFO - 成功发起POST请求，请求结果code为：202, 请求结果字段为：{'task': 'fourth request'}
+2018-12-07 11:06:43,692 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:3.0,参数:{"task":"fourth request"},请求方式：POST
+2018-12-07 11:06:43,693 - root - INFO - 对【code】断言,断言结果--预期值202 == 实际值202
+2018-12-07 11:06:43,693 - root - INFO - 对【task】字段断言,断言结果--预期值fourth request == 实际值fourth request
+2018-12-07 11:06:43,694 - root - INFO - 测试用例执行完毕
+2018-12-07 11:06:43,694 - root - INFO - ----------------------------------
+2018-12-07 11:06:43,695 - root - INFO - 测试用例开始执行
+2018-12-07 11:06:43,695 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos/todo1', 'listname': 'put请求返回task不正确', 'key': 4.0, 'coneent': '{"task":"put success"}', 'param_place': '', 'fangshi': 'PUT', 'expect1': 'code=201', 'expect2': 'task=put succ'}
+2018-12-07 11:06:43,700 - root - INFO - 成功发起PUT请求，请求结果code为：201, 请求结果字段为：{'task': 'put success'}
+2018-12-07 11:06:43,700 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo1,key:4.0,参数:{"task":"put success"},请求方式：PUT
+2018-12-07 11:06:43,701 - root - INFO - 对【code】断言,断言结果--预期值201 == 实际值201
+2018-12-07 11:06:43,701 - root - WARNING - 对【task】字段断言,断言结果--预期值put succ != 实际值put success
+2018-12-07 11:06:43,702 - root - INFO - 测试用例执行完毕
+2018-12-07 11:06:43,703 - root - INFO - ----------------------------------
+2018-12-07 11:06:43,703 - root - INFO - 测试用例开始执行
+2018-12-07 11:06:43,704 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos/todo2', 'listname': 'put请求返回resultcode和task正确', 'key': 5.0, 'coneent': '{"task":"update success"}', 'param_place': 'database', 'fangshi': 'PUT', 'expect1': 'code=201', 'expect2': 'task=update success'}
+2018-12-07 11:06:43,707 - root - INFO - 当前接口涉及数据库：orderdb
+2018-12-07 11:06:43,759 - root - INFO - 成功登录数据库：orderdb，版本为：8.0.11，执行SQL：select content from blog_blog where id = '7'
+2018-12-07 11:06:43,768 - root - INFO - 查询结果：{"task":"update success"}
+2018-12-07 11:06:43,769 - root - INFO - 数据格式为：{"task":"update success"}
+2018-12-07 11:06:43,774 - root - INFO - 成功发起PUT请求，请求结果code为：201, 请求结果字段为：{'task': 'update success'}
+2018-12-07 11:06:43,774 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo2,key:5.0,参数:{"task":"update success"},请求方式：PUT
+2018-12-07 11:06:43,775 - root - INFO - 对【code】断言,断言结果--预期值201 == 实际值201
+2018-12-07 11:06:43,775 - root - INFO - 对【task】字段断言,断言结果--预期值update success == 实际值update success
+2018-12-07 11:06:43,776 - root - INFO - 测试用例执行完毕
+2018-12-07 11:06:43,776 - root - INFO - ----------------------------------
+2018-12-07 11:06:43,777 - root - INFO - 测试用例开始执行
+2018-12-07 11:06:43,778 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos/todo1', 'listname': 'delete请求成功删除数据', 'key': 6.0, 'coneent': 'not argument', 'param_place': '', 'fangshi': 'DELETE', 'expect1': 'code=204', 'expect2': 'param=null'}
+2018-12-07 11:06:43,781 - root - INFO - 成功发起DELETE请求，请求结果code为：204, 请求结果字段为：
+2018-12-07 11:06:43,782 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo1,key:6.0,参数:not argument,请求方式：DELETE
+2018-12-07 11:06:43,783 - root - INFO - 对【code】断言,断言结果--预期值204 == 实际值204
+2018-12-07 11:06:43,784 - root - INFO - 测试用例执行完毕
+2018-12-07 11:06:43,784 - root - INFO - ----------------------------------
+2018-12-07 11:06:43,785 - root - INFO - 测试用例开始执行
+2018-12-07 11:06:43,785 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos', 'listname': 'get请求返回resultcode正确', 'key': 7.0, 'coneent': 'not argument', 'param_place': '', 'fangshi': 'GET', 'expect1': 'code=200', 'expect2': 'param=null'}
+2018-12-07 11:06:43,789 - root - INFO - 成功发起GET请求，请求结果code为：200, 请求结果字段为：{
+    "todo2": {
+        "task": "update success"
+    },
+    "todo3": {
+        "task3": "third request"
+    },
+    "todo4": {
+        "task": "fourth request"
+    },
+    "todo5": {
+        "task": "fourth request"
+    }
+}
+
+2018-12-07 11:06:43,790 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:7.0,参数:not argument,请求方式：GET
+2018-12-07 11:06:43,790 - root - INFO - 对【code】断言,断言结果--预期值200 == 实际值200
+2018-12-07 11:06:43,791 - root - INFO - 测试用例执行完毕
+2018-12-07 11:06:43,791 - root - INFO - ----------------------------------
+2018-12-07 11:06:43,792 - root - INFO - 测试用例开始执行
+2018-12-07 11:06:43,792 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos', 'listname': 'get请求返回resultcode不正确', 'key': 8.0, 'coneent': 'not argument', 'param_place': '', 'fangshi': 'GET', 'expect1': 'code=2011', 'expect2': 'param=null'}
+2018-12-07 11:06:43,797 - root - INFO - 成功发起GET请求，请求结果code为：200, 请求结果字段为：{
+    "todo2": {
+        "task": "update success"
+    },
+    "todo3": {
+        "task3": "third request"
+    },
+    "todo4": {
+        "task": "fourth request"
+    },
+    "todo5": {
+        "task": "fourth request"
+    }
+}
+
+2018-12-07 11:06:43,797 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:8.0,参数:not argument,请求方式：GET
+2018-12-07 11:06:43,798 - root - WARNING - 对【code】断言,断言结果--预期值2011 != 实际值200
+2018-12-07 11:06:43,798 - root - INFO - 测试用例执行完毕
+2018-12-07 11:06:43,799 - root - INFO - ----------------------------------
+2018-12-07 11:06:43,800 - root - INFO - 测试用例开始执行
+2018-12-07 11:06:43,800 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos', 'listname': 'post请求返回resultcode和task正确', 'key': 9.0, 'coneent': '{"task":"fourth request"}', 'param_place': '', 'fangshi': 'POST', 'expect1': 'code=202', 'expect2': 'task=fourth request'}
+2018-12-07 11:06:43,805 - root - INFO - 成功发起POST请求，请求结果code为：202, 请求结果字段为：{'task': 'fourth request'}
+2018-12-07 11:06:43,805 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:9.0,参数:{"task":"fourth request"},请求方式：POST
+2018-12-07 11:06:43,806 - root - INFO - 对【code】断言,断言结果--预期值202 == 实际值202
+2018-12-07 11:06:43,806 - root - INFO - 对【task】字段断言,断言结果--预期值fourth request == 实际值fourth request
+2018-12-07 11:06:43,807 - root - INFO - 测试用例执行完毕
+2018-12-07 11:06:43,807 - root - INFO - ----------------------------------
+2018-12-07 11:06:43,808 - root - INFO - 测试用例开始执行
+2018-12-07 11:06:43,808 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos/todo1', 'listname': 'put请求返回task不正确', 'key': 10.0, 'coneent': '{"task":"put success"}', 'param_place': '', 'fangshi': 'PUT', 'expect1': 'code=201', 'expect2': 'task=put succ'}
+2018-12-07 11:06:43,812 - root - INFO - 成功发起PUT请求，请求结果code为：201, 请求结果字段为：{'task': 'put success'}
+2018-12-07 11:06:43,813 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo1,key:10.0,参数:{"task":"put success"},请求方式：PUT
+2018-12-07 11:06:43,814 - root - INFO - 对【code】断言,断言结果--预期值201 == 实际值201
+2018-12-07 11:06:43,814 - root - WARNING - 对【task】字段断言,断言结果--预期值put succ != 实际值put success
+2018-12-07 11:06:43,815 - root - INFO - 测试用例执行完毕
+2018-12-07 11:06:43,815 - root - INFO - ----------------------------------

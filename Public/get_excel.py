@@ -4,6 +4,7 @@ from Public.log import Log
 from config import globalparam
 
 log_path = globalparam.log_path
+file_path = globalparam.data_path
 
 def datacel(filrpath):
     try:
@@ -33,18 +34,29 @@ def datacel(filrpath):
     except:
         Log().error('打开测试用例失败，原因是:%s' % Exception)
 
-def makedata():
-    #import os
-    #path = os.getcwd() + '\\test_case_data\\case.xlsx'
-    #path = globalparam.data_path + "\\" + "case.xlsx"
-    path = globalparam.data_path + "/" + "case.xlsx"
+def data():
+    path = file_path + "\" + "case{0}.xlsx".format(aa)
     listid, listname, listkey, listconeent, listparam_place, listurl, listfangshi, listqiwang1, listname, listqiwang2=datacel(path)
-    make_data = []
+    make_data1 = []
     try:
         for i in range(len(listid)):
             make_data.append({'url': listurl[i], 'listname': listname[i],  'key': listkey[i], 'coneent':listconeent[i], 'param_place': listparam_place[i],
                               'fangshi': listfangshi[i], 'expect1': listqiwang1[i], 'expect2': listqiwang2[i]})
             i += 1
-        return make_data
+        return make_data1
     except:
         Log().error('打开测试用例失败，原因是:%s' % Exception)
+
+def makedata():
+    # 获取文件下文件个数
+    count = 0
+    make_data = []
+    for root, dirs, files in os.walk(file_path):
+        for each in files:
+            count += 1
+    #用例整合
+    for aa in range(count):
+        aa += 1
+        for bb in data(aa):
+            make_data.append(bb)
+    return make_data
