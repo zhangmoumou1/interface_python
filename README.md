@@ -59,7 +59,7 @@
 ### 2018.12.07---支持读取多个Excel文件<br>
 实现逻辑：<br>
 1.在实际工作中测试用例不可能只写在一个Excel中，支持读取多个<br>
-2.更改get_excel.py，从指定文件夹下获取Excel文件，读取所有用例存到列表里<br>
+2.更改[get_excel.py](https://github.com/zhangmoumou1/interface_python/blob/master/Public/get_excel.py)，从指定文件夹下获取Excel文件，读取所有用例存到列表里<br>
 3.注意Excel文件的命名，以实际代码处理为准<br>
 <br>
 <br>
