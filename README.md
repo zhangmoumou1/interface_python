@@ -1,8 +1,8 @@
 # interface-python
-## 一、实现方法<br>
-<font color="#d40101">注意事项：</font><br>
-运行此项目前，先修改[config.ini](https://github.com/zhangmoumou1/interface_python/blob/master/config/config.ini)的路径，此路径为项目本地路径；此接口数据为字典格式，用到实际项目中请转换成json、xml或其他格式<br>
+注意事项：<br>
 <br>
+运行此项目前，先修改[config.ini](https://github.com/zhangmoumou1/interface_python/blob/master/config/config.ini)的路径，此路径为项目本地路径；此接口数据为字典格式，用到实际项目中请转换成json、xml或其他格式<br>
+## 一、实现方法<br>
 1.通过python+flask编写Restful API，方便调试此框架<br>
 <br>
 2.运行Restful_Api下的[resfulapi.py](https://github.com/zhangmoumou1/interface_python/blob/master/Restful_Api/resfulapi.py)，可先通过postman或其他接口工具自测接口是否运行正常，停止运行可结束进程，<br>
