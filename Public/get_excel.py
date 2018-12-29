@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import xlrd
+import os
 from Public.log import Log
 from config import globalparam
 
@@ -34,13 +35,13 @@ def datacel(filrpath):
     except:
         Log().error('打开测试用例失败，原因是:%s' % Exception)
 
-def data():
-    path = file_path + "\" + "case{0}.xlsx".format(aa)
+def data(aa):
+    path = file_path + "\\" + "case{0}.xlsx".format(aa)
     listid, listname, listkey, listconeent, listparam_place, listurl, listfangshi, listqiwang1, listname, listqiwang2=datacel(path)
     make_data1 = []
     try:
         for i in range(len(listid)):
-            make_data.append({'url': listurl[i], 'listname': listname[i],  'key': listkey[i], 'coneent':listconeent[i], 'param_place': listparam_place[i],
+            make_data1.append({'url': listurl[i], 'listname': listname[i],  'key': listkey[i], 'coneent':listconeent[i], 'param_place': listparam_place[i],
                               'fangshi': listfangshi[i], 'expect1': listqiwang1[i], 'expect2': listqiwang2[i]})
             i += 1
         return make_data1
@@ -54,6 +55,7 @@ def makedata():
     for root, dirs, files in os.walk(file_path):
         for each in files:
             count += 1
+        print(count)
     #用例整合
     for aa in range(count):
         aa += 1
