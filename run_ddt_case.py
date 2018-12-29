@@ -4,7 +4,7 @@ import unittest
 from branch import HTMLTestReportCN
 from config import globalparam
 
-test_dir = "./testcase"
+test_dir = "./testCase"
 discover = unittest.defaultTestLoader.discover(test_dir, pattern="*case.py")
 
 # if __name__ == '__main__':
