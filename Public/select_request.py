@@ -2,7 +2,7 @@
 from Public.requests import requ
 from branch.log import Log
 from branch.operate_db import Operate_db
-from branch.readyaml import Getyaml
+from config.readyaml import Getyaml
 
 reques=requ()
 class TestApi(object):

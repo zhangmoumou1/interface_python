@@ -5,7 +5,7 @@ import os
 import pymysql
 
 from branch.log import Log
-from branch.readyaml import Getyaml
+from config.readyaml import Getyaml
 
 # 获取当前脚本所在文件夹路径
 curPath = os.path.dirname(os.path.realpath(__file__))
