@@ -1,9 +1,11 @@
 import unittest
+
 import ddt
+
 from Public.expect import assertre
-from Public.get_excel import makedata
-from Public.log import Log
 from Public.select_request import TestApi
+from branch.get_excel import makedata
+from branch.log import Log
 
 data_test = makedata()
 

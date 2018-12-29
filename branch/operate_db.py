@@ -1,9 +1,12 @@
 #Author:命命
 #coding=utf-8
-import pymysql
 import os
-from config.readyaml import Getyaml
-from Public.log import Log
+
+import pymysql
+
+from branch.log import Log
+from branch.readyaml import Getyaml
+
 # 获取当前脚本所在文件夹路径
 curPath = os.path.dirname(os.path.realpath(__file__))
 config_path = os.path.join(curPath, "db.yaml")

@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
-import xlrd
 import os
-from Public.log import Log
+
+import xlrd
+
+from branch.log import Log
 from config import globalparam
 
 log_path = globalparam.log_path

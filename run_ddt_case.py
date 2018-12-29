@@ -3,9 +3,8 @@ import time
 import unittest
 from branch import HTMLTestReportCN
 from config import globalparam
-from testCase.ddt_case import MyTest
 
-test_dir = "./testCase"
+test_dir = "./testcase"
 discover = unittest.defaultTestLoader.discover(test_dir, pattern="*case.py")
 
 # if __name__ == '__main__':

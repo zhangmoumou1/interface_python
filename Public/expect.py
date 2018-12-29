@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from Public.log import Log
+from branch.log import Log
 logger = Log()
 
 
