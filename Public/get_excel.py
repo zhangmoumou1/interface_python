@@ -36,7 +36,7 @@ def datacel(filrpath):
         Log().error('打开测试用例失败，原因是:%s' % Exception)
 
 def data(aa):
-    path = file_path + "\\" + "case{0}.xlsx".format(aa)
+    path = file_path + "/" + "case{0}.xlsx".format(aa)
     listid, listname, listkey, listconeent, listparam_place, listurl, listfangshi, listqiwang1, listname, listqiwang2=datacel(path)
     make_data1 = []
     try:
