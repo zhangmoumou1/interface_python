@@ -50,7 +50,7 @@
 ### 2018.11.05---增加mysql、oracle、SQLserver数据库的操作<br>
 实现逻辑：<br>
 1.新增[readyaml.py](https://github.com/zhangmoumou1/interface_python/blob/master/config/readyaml.py)、[db.yaml](https://github.com/zhangmoumou1/interface_python/blob/master/config/db.yaml)、[operate_db.py](https://github.com/zhangmoumou1/interface_python/blob/master/Public/operate_db.py)<br>
-1.使用yaml文件管理数据库连接信息（此为个人服务器的数据库请不要随意改动数据，数据库如有问题可QQ联系本人）<br>
+1.使用yaml文件管理数据库连接信息（此为个人服务器的数据库请不要随意改动数据）<br>
 2.通过接口url和数据库名关联，来判断执行接口需操作对应库<br>
 3.通过接口url和SQL语句关联，来判断执行接口所要执行的SQL<br>
 4.在[select_request.py](https://github.com/zhangmoumou1/interface_python/blob/master/Public/select_request.py)中进行数据库操作获取请求数据<br>
@@ -64,6 +64,4 @@
 3.注意Excel文件的命名，以实际代码处理为准<br>
 <br>
 <br>
-<br>
-<br>
-#### 有问题联系QQ：1392364470
+
