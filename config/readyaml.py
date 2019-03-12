@@ -15,6 +15,7 @@ class Getyaml():
             cont = f.read()
         cf = load(cont)
         data = cf.get(self.yamlparam)
+        print(data)
         return data
 
     def port_db(self):

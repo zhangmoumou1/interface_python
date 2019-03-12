@@ -1,10 +1,8 @@
 #Author:命命
 #coding=utf-8
 import os
-
 import pymysql
-
-from branch.log import Log
+from Branch.log import Log
 from config.readyaml import Getyaml
 
 # 获取当前脚本所在文件夹路径
@@ -36,7 +34,6 @@ class Operate_db():
         version = self.db.server_version
         Log().info('成功登录数据库：%s，版本为：%s，执行SQL：%s' % (self.getdb, version, sql))
         if "SELECT" in sql or "select" in sql:
-            # 查询
             try:
                 self.cursor.execute(sql)
                 results = self.cursor.fetchall()
@@ -46,7 +43,6 @@ class Operate_db():
                 Log().info("Error: unable to fetch data")
                 raise
         elif "UPDATE" in sql or "update" in sql:
-            #修改
             try:
                 self.cursor.execute(sql)
                 self.db.commit()

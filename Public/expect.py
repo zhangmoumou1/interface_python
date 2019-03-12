@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from branch.log import Log
+from Branch.log import Log
 logger = Log()
 
 
@@ -17,9 +17,12 @@ def assert_in(asserqiwang, fanhuijson):
         Log().info('填写测试预期值')
         return {"code": 2, 'result': '填写测试预期值'}
 
-def assertre(asserqingwang):
-    if len(asserqingwang.split('=')) > 1:
-        data = asserqingwang.split('&')   #['code=4001']
+def change(asserexpect):
+    """
+    变更期望值格式
+    """
+    if len(asserexpect.split('=')) > 1:
+        data = asserexpect.split('&')   #['code=4001']
         result = dict([(item.split('=')) for item in data])    #{'code': '4001'}
         return result
     else:

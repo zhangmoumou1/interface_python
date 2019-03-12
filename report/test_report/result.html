@@ -123,9 +123,9 @@ function html_escape(s) {
 <div class='heading'>
 <h2 style="font-family: Microsoft YaHei">接口自动化测试报告</h2>
 <p class='attribute'><strong>测试人员 : </strong> 命命</p>
-<p class='attribute'><strong>开始时间 : </strong> 2018-12-07 10:51:16</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.571032</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 18，通过 12，失败 6，通过率= 66.67%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2019-03-12 10:58:42</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.305018</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 18，通过 9，失败 6，错误 3，通过率= 50.00%</p>
 
 <p class='description'></p>
 </div>
@@ -133,9 +133,9 @@ function html_escape(s) {
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>通过率{ 66.67% }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>通过率{ 50.00% }</a>
 <a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 6 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 12 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 9 }</a>
 <a class="btn btn-info" href='javascript:showCase(3)'>所有{ 18 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
@@ -156,17 +156,17 @@ function html_escape(s) {
     <td>详细</td>
 </tr>
 
-<tr class='failClass warning'>
-    <td>ddt_case.MyTest</td>
+<tr class='errorClass warning'>
+    <td>test_case.MyTest</td>
     <td class="text-center">18</td>
-    <td class="text-center">12</td>
+    <td class="text-center">9</td>
     <td class="text-center">6</td>
-    <td class="text-center">0</td>
+    <td class="text-center">3</td>
     <td class="text-center"><a href="javascript:showClassDetail('c1',18)" class="detail" id='c1'>详细</a></td>
 </tr>
 
 <tr id='pt1_1' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>testCase0_get请求返回resultcode正确</div></td>
+    <td class='passCase'><div class='testcase'>testCase0</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
     <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
@@ -177,11 +177,11 @@ function html_escape(s) {
     <div style="text-align:left" id='div_pt1_1' class="collapse in">
     <pre>
     
-pt1_1: 2018-12-07 10:51:16,483 - root - INFO - 测试用例开始执行
-2018-12-07 10:51:16,485 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos', 'listname': 'get请求返回resultcode正确', 'key': 1.0, 'coneent': 'not argument', 'param_place': '', 'fangshi': 'GET', 'expect1': 'code=200', 'expect2': 'param=null'}
-2018-12-07 10:51:16,492 - root - INFO - 成功发起GET请求，请求结果code为：200, 请求结果字段为：{
+pt1_1: 2019-03-12 10:58:42,244 - root - INFO - 测试用例开始执行
+2019-03-12 10:58:42,245 - root - INFO - 获取用例数据:{'id': 1.0, 'url': 'http://127.0.0.1:5000/todos', 'name': 'get请求返回resultcode正确', 'key': 1.0, 'param': 'not argument', 'place': '', 'way': 'GET', 'expect1': 'code=200', 'expect2': 'param=null'}
+2019-03-12 10:58:42,253 - root - INFO - 成功发起GET请求，请求结果code为：200, 请求结果字段为：{
     "todo2": {
-        "task": "update success"
+        "task2": "second request"
     },
     "todo3": {
         "task3": "third request"
@@ -212,10 +212,10 @@ pt1_1: 2018-12-07 10:51:16,483 - root - INFO - 测试用例开始执行
     }
 }
 
-2018-12-07 10:51:16,493 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:1.0,参数:not argument,请求方式：GET
-2018-12-07 10:51:16,495 - root - INFO - 对【code】断言,断言结果--预期值200 == 实际值200
-2018-12-07 10:51:16,496 - root - INFO - 测试用例执行完毕
-2018-12-07 10:51:16,497 - root - INFO - ----------------------------------
+2019-03-12 10:58:42,254 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:1.0,参数:not argument,请求方式：GET
+2019-03-12 10:58:42,255 - root - INFO - 对【code】断言,断言结果--预期值200 == 实际值200
+2019-03-12 10:58:42,256 - root - INFO - 测试用例执行完毕
+2019-03-12 10:58:42,257 - root - INFO - ----------------------------------
 
 
     </pre>
@@ -223,30 +223,63 @@ pt1_1: 2018-12-07 10:51:16,483 - root - INFO - 测试用例开始执行
     </td>
 </tr>
 
-<tr id='pt1_2' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>testCase10_put请求返回resultcode和task正确</div></td>
+<tr id='ft1_2' class='none'>
+    <td class='failCase'><div class='testcase'>testCase1</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_pt1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_2'>通过</button>
-    <div id='div_pt1_2' class="collapse">  -->
+    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_2'>失败</button>
+    <div id='div_ft1_2' class="collapse">  -->
 
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_2'>通过</button>
-    <div style="text-align:left" id='div_pt1_2' class="collapse in">
+    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_2'>失败</button>
+    <div style="text-align:left" id='div_ft1_2' class="collapse in">
     <pre>
     
-pt1_2: 2018-12-07 10:51:16,498 - root - INFO - 测试用例开始执行
-2018-12-07 10:51:16,499 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos/todo2', 'listname': 'put请求返回resultcode和task正确', 'key': 11.0, 'coneent': '{"task":"update success"}', 'param_place': 'database', 'fangshi': 'PUT', 'expect1': 'code=201', 'expect2': 'task=update success'}
-2018-12-07 10:51:16,503 - root - INFO - 当前接口涉及数据库：orderdb
-2018-12-07 10:51:16,603 - root - INFO - 成功登录数据库：orderdb，版本为：8.0.11，执行SQL：select content from blog_blog where id = '7'
-2018-12-07 10:51:16,622 - root - INFO - 查询结果：{"task":"update success"}
-2018-12-07 10:51:16,624 - root - INFO - 数据格式为：{"task":"update success"}
-2018-12-07 10:51:16,632 - root - INFO - 成功发起PUT请求，请求结果code为：201, 请求结果字段为：{'task': 'update success'}
-2018-12-07 10:51:16,634 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo2,key:11.0,参数:{"task":"update success"},请求方式：PUT
-2018-12-07 10:51:16,636 - root - INFO - 对【code】断言,断言结果--预期值201 == 实际值201
-2018-12-07 10:51:16,638 - root - INFO - 对【task】字段断言,断言结果--预期值update success == 实际值update success
-2018-12-07 10:51:16,640 - root - INFO - 测试用例执行完毕
-2018-12-07 10:51:16,642 - root - INFO - ----------------------------------
+ft1_2: 2019-03-12 10:58:42,258 - root - INFO - 测试用例开始执行
+2019-03-12 10:58:42,259 - root - INFO - 获取用例数据:{'id': 2.0, 'url': 'http://127.0.0.1:5000/todos', 'name': 'get请求返回resultcode不正确', 'key': 2.0, 'param': 'not argument', 'place': '', 'way': 'GET', 'expect1': 'code=2011', 'expect2': 'param=null'}
+2019-03-12 10:58:42,263 - root - INFO - 成功发起GET请求，请求结果code为：200, 请求结果字段为：{
+    "todo2": {
+        "task2": "second request"
+    },
+    "todo3": {
+        "task3": "third request"
+    },
+    "todo4": {
+        "task": "fourth request"
+    },
+    "todo5": {
+        "task": "fourth request"
+    },
+    "todo6": {
+        "task": "fourth request"
+    },
+    "todo7": {
+        "task": "fourth request"
+    },
+    "todo8": {
+        "task": "fourth request"
+    },
+    "todo9": {
+        "task": "fourth request"
+    },
+    "todo10": {
+        "task": "fourth request"
+    },
+    "todo1": {
+        "task": "put success"
+    }
+}
+
+2019-03-12 10:58:42,265 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:2.0,参数:not argument,请求方式：GET
+2019-03-12 10:58:42,266 - root - WARNING - 对【code】断言,断言结果--预期值2011 != 实际值200
+2019-03-12 10:58:42,267 - root - INFO - 测试用例执行完毕
+2019-03-12 10:58:42,268 - root - INFO - ----------------------------------
+Traceback (most recent call last):
+  File "D:\test_software\python\lib\site-packages\ddt.py", line 156, in wrapper
+    return func(self, *args, **kwargs)
+  File "F:\git\zhangmoumou1\interface_python\testcase\test_case.py", line 33, in testCase
+    self.assertEqual(int(expect_one['code']), apijson[0], msg='预期和返回不一致')
+AssertionError: 2011 != 200 : 预期和返回不一致
 
 
     </pre>
@@ -254,25 +287,56 @@ pt1_2: 2018-12-07 10:51:16,498 - root - INFO - 测试用例开始执行
     </td>
 </tr>
 
-<tr id='pt1_3' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>testCase11_delete请求成功删除数据</div></td>
+<tr id='ft1_3' class='none'>
+    <td class='errorCase'><div class='testcase'>testCase10</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_pt1_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_3'>通过</button>
-    <div id='div_pt1_3' class="collapse">  -->
+    <button id='btn_ft1_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_3'>错误</button>
+    <div id='div_ft1_3' class="collapse">  -->
 
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt1_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_3'>通过</button>
-    <div style="text-align:left" id='div_pt1_3' class="collapse in">
+    <button id='btn_ft1_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_3'>错误</button>
+    <div style="text-align:left" id='div_ft1_3' class="collapse in">
     <pre>
     
-pt1_3: 2018-12-07 10:51:16,644 - root - INFO - 测试用例开始执行
-2018-12-07 10:51:16,646 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos/todo1', 'listname': 'delete请求成功删除数据', 'key': 12.0, 'coneent': 'not argument', 'param_place': '', 'fangshi': 'DELETE', 'expect1': 'code=204', 'expect2': 'param=null'}
-2018-12-07 10:51:16,653 - root - INFO - 成功发起DELETE请求，请求结果code为：204, 请求结果字段为：
-2018-12-07 10:51:16,655 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo1,key:12.0,参数:not argument,请求方式：DELETE
-2018-12-07 10:51:16,657 - root - INFO - 对【code】断言,断言结果--预期值204 == 实际值204
-2018-12-07 10:51:16,659 - root - INFO - 测试用例执行完毕
-2018-12-07 10:51:16,662 - root - INFO - ----------------------------------
+ft1_3: 2019-03-12 10:58:42,269 - root - INFO - 测试用例开始执行
+2019-03-12 10:58:42,270 - root - INFO - 获取用例数据:{'id': 5.0, 'url': 'http://127.0.0.1:5000/todos/todo2', 'name': 'put请求返回resultcode和task正确', 'key': 11.0, 'param': '{"task":"update success"}', 'place': 'database', 'way': 'PUT', 'expect1': 'code=201', 'expect2': 'task=update success'}
+{'paydb': ['http://127.0.0.1:5000/todos', 'http://127.0.0.1:5000/todos/todo1'], 'orderdb': ['http://127.0.0.1:5000/todos/todo2', 'http://127.0.0.1:5000/todos/todo3'], 'contentdb': ['http://127.0.0.1:5000/todos/todo4', 'http://127.0.0.1:5000/todos/todo5']}
+2019-03-12 10:58:42,274 - root - INFO - 当前接口涉及数据库：orderdb
+['116.62.201.163', 'testdb', 'testdb123', 'orderdb']
+{'http://127.0.0.1:5000/todos': "select content from blog_blog where id = '5'", 'http://127.0.0.1:5000/todos/todo1': "select content from blog_blog where id = '6'", 'http://127.0.0.1:5000/todos/todo2': "select content from blog_blog where id = '7'"}
+2019-03-12 10:58:42,306 - root - INFO - 成功登录数据库：orderdb，版本为：8.0.11，执行SQL：select content from blog_blog where id = '7'
+2019-03-12 10:58:42,311 - root - INFO - Error: unable to fetch data
+2019-03-12 10:58:42,312 - root - INFO - 测试用例执行完毕
+2019-03-12 10:58:42,313 - root - INFO - ----------------------------------
+Traceback (most recent call last):
+  File "D:\test_software\python\lib\site-packages\ddt.py", line 156, in wrapper
+    return func(self, *args, **kwargs)
+  File "F:\git\zhangmoumou1\interface_python\testcase\test_case.py", line 27, in testCase
+    way=data_test['way'],assertdata=data1,place=data_test['place']).selectway()
+  File "F:\git\zhangmoumou1\interface_python\Public\select_request.py", line 38, in selectway
+    self.response = interface.put(self.url, self.get_param(), self.assertdata)
+  File "F:\git\zhangmoumou1\interface_python\Public\select_request.py", line 25, in get_param
+    post_data = Operate_db(self.database,self.url).Perform()
+  File "F:\git\zhangmoumou1\interface_python\Branch\operate_db.py", line 38, in Perform
+    self.cursor.execute(sql)
+  File "D:\test_software\python\lib\site-packages\pymysql\cursors.py", line 165, in execute
+    result = self._query(query)
+  File "D:\test_software\python\lib\site-packages\pymysql\cursors.py", line 321, in _query
+    conn.query(q)
+  File "D:\test_software\python\lib\site-packages\pymysql\connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\test_software\python\lib\site-packages\pymysql\connections.py", line 1061, in _read_query_result
+    result.read()
+  File "D:\test_software\python\lib\site-packages\pymysql\connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "D:\test_software\python\lib\site-packages\pymysql\connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "D:\test_software\python\lib\site-packages\pymysql\connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\test_software\python\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'orderdb.blog_blog' doesn't exist")
 
 
     </pre>
@@ -281,7 +345,7 @@ pt1_3: 2018-12-07 10:51:16,644 - root - INFO - 测试用例开始执行
 </tr>
 
 <tr id='pt1_4' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>testCase12_get请求返回resultcode正确</div></td>
+    <td class='passCase'><div class='testcase'>testCase11</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
     <button id='btn_pt1_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_4'>通过</button>
@@ -292,42 +356,13 @@ pt1_3: 2018-12-07 10:51:16,644 - root - INFO - 测试用例开始执行
     <div style="text-align:left" id='div_pt1_4' class="collapse in">
     <pre>
     
-pt1_4: 2018-12-07 10:51:16,664 - root - INFO - 测试用例开始执行
-2018-12-07 10:51:16,666 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos', 'listname': 'get请求返回resultcode正确', 'key': 13.0, 'coneent': 'not argument', 'param_place': '', 'fangshi': 'GET', 'expect1': 'code=200', 'expect2': 'param=null'}
-2018-12-07 10:51:16,671 - root - INFO - 成功发起GET请求，请求结果code为：200, 请求结果字段为：{
-    "todo2": {
-        "task": "update success"
-    },
-    "todo3": {
-        "task3": "third request"
-    },
-    "todo4": {
-        "task": "fourth request"
-    },
-    "todo5": {
-        "task": "fourth request"
-    },
-    "todo6": {
-        "task": "fourth request"
-    },
-    "todo7": {
-        "task": "fourth request"
-    },
-    "todo8": {
-        "task": "fourth request"
-    },
-    "todo9": {
-        "task": "fourth request"
-    },
-    "todo10": {
-        "task": "fourth request"
-    }
-}
-
-2018-12-07 10:51:16,673 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:13.0,参数:not argument,请求方式：GET
-2018-12-07 10:51:16,674 - root - INFO - 对【code】断言,断言结果--预期值200 == 实际值200
-2018-12-07 10:51:16,675 - root - INFO - 测试用例执行完毕
-2018-12-07 10:51:16,677 - root - INFO - ----------------------------------
+pt1_4: 2019-03-12 10:58:42,316 - root - INFO - 测试用例开始执行
+2019-03-12 10:58:42,317 - root - INFO - 获取用例数据:{'id': 6.0, 'url': 'http://127.0.0.1:5000/todos/todo1', 'name': 'delete请求成功删除数据', 'key': 12.0, 'param': 'not argument', 'place': '', 'way': 'DELETE', 'expect1': 'code=204', 'expect2': 'param=null'}
+2019-03-12 10:58:42,321 - root - INFO - 成功发起DELETE请求，请求结果code为：204, 请求结果字段为：
+2019-03-12 10:58:42,322 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo1,key:12.0,参数:not argument,请求方式：DELETE
+2019-03-12 10:58:42,323 - root - INFO - 对【code】断言,断言结果--预期值204 == 实际值204
+2019-03-12 10:58:42,324 - root - INFO - 测试用例执行完毕
+2019-03-12 10:58:42,325 - root - INFO - ----------------------------------
 
 
     </pre>
@@ -335,23 +370,23 @@ pt1_4: 2018-12-07 10:51:16,664 - root - INFO - 测试用例开始执行
     </td>
 </tr>
 
-<tr id='ft1_5' class='none'>
-    <td class='failCase'><div class='testcase'>testCase13_get请求返回resultcode不正确</div></td>
+<tr id='pt1_5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>testCase12</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_5'>失败</button>
-    <div id='div_ft1_5' class="collapse">  -->
+    <button id='btn_pt1_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_5'>通过</button>
+    <div id='div_pt1_5' class="collapse">  -->
 
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_5'>失败</button>
-    <div style="text-align:left" id='div_ft1_5' class="collapse in">
+    <button id='btn_pt1_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_5'>通过</button>
+    <div style="text-align:left" id='div_pt1_5' class="collapse in">
     <pre>
     
-ft1_5: 2018-12-07 10:51:16,678 - root - INFO - 测试用例开始执行
-2018-12-07 10:51:16,679 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos', 'listname': 'get请求返回resultcode不正确', 'key': 14.0, 'coneent': 'not argument', 'param_place': '', 'fangshi': 'GET', 'expect1': 'code=2011', 'expect2': 'param=null'}
-2018-12-07 10:51:16,684 - root - INFO - 成功发起GET请求，请求结果code为：200, 请求结果字段为：{
+pt1_5: 2019-03-12 10:58:42,327 - root - INFO - 测试用例开始执行
+2019-03-12 10:58:42,328 - root - INFO - 获取用例数据:{'id': 1.0, 'url': 'http://127.0.0.1:5000/todos', 'name': 'get请求返回resultcode正确', 'key': 13.0, 'param': 'not argument', 'place': '', 'way': 'GET', 'expect1': 'code=200', 'expect2': 'param=null'}
+2019-03-12 10:58:42,332 - root - INFO - 成功发起GET请求，请求结果code为：200, 请求结果字段为：{
     "todo2": {
-        "task": "update success"
+        "task2": "second request"
     },
     "todo3": {
         "task3": "third request"
@@ -379,14 +414,69 @@ ft1_5: 2018-12-07 10:51:16,678 - root - INFO - 测试用例开始执行
     }
 }
 
-2018-12-07 10:51:16,685 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:14.0,参数:not argument,请求方式：GET
-2018-12-07 10:51:16,686 - root - WARNING - 对【code】断言,断言结果--预期值2011 != 实际值200
-2018-12-07 10:51:16,687 - root - INFO - 测试用例执行完毕
-2018-12-07 10:51:16,688 - root - INFO - ----------------------------------
+2019-03-12 10:58:42,333 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:13.0,参数:not argument,请求方式：GET
+2019-03-12 10:58:42,335 - root - INFO - 对【code】断言,断言结果--预期值200 == 实际值200
+2019-03-12 10:58:42,336 - root - INFO - 测试用例执行完毕
+2019-03-12 10:58:42,337 - root - INFO - ----------------------------------
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_6' class='none'>
+    <td class='failCase'><div class='testcase'>testCase13</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_6' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_6'>失败</button>
+    <div id='div_ft1_6' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_6' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_6'>失败</button>
+    <div style="text-align:left" id='div_ft1_6' class="collapse in">
+    <pre>
+    
+ft1_6: 2019-03-12 10:58:42,338 - root - INFO - 测试用例开始执行
+2019-03-12 10:58:42,339 - root - INFO - 获取用例数据:{'id': 2.0, 'url': 'http://127.0.0.1:5000/todos', 'name': 'get请求返回resultcode不正确', 'key': 14.0, 'param': 'not argument', 'place': '', 'way': 'GET', 'expect1': 'code=2011', 'expect2': 'param=null'}
+2019-03-12 10:58:42,343 - root - INFO - 成功发起GET请求，请求结果code为：200, 请求结果字段为：{
+    "todo2": {
+        "task2": "second request"
+    },
+    "todo3": {
+        "task3": "third request"
+    },
+    "todo4": {
+        "task": "fourth request"
+    },
+    "todo5": {
+        "task": "fourth request"
+    },
+    "todo6": {
+        "task": "fourth request"
+    },
+    "todo7": {
+        "task": "fourth request"
+    },
+    "todo8": {
+        "task": "fourth request"
+    },
+    "todo9": {
+        "task": "fourth request"
+    },
+    "todo10": {
+        "task": "fourth request"
+    }
+}
+
+2019-03-12 10:58:42,344 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:14.0,参数:not argument,请求方式：GET
+2019-03-12 10:58:42,345 - root - WARNING - 对【code】断言,断言结果--预期值2011 != 实际值200
+2019-03-12 10:58:42,347 - root - INFO - 测试用例执行完毕
+2019-03-12 10:58:42,348 - root - INFO - ----------------------------------
 Traceback (most recent call last):
   File "D:\test_software\python\lib\site-packages\ddt.py", line 156, in wrapper
     return func(self, *args, **kwargs)
-  File "F:\git\zhangmoumou1\interface_python\testCase\ddt_case.py", line 33, in testCase
+  File "F:\git\zhangmoumou1\interface_python\testcase\test_case.py", line 33, in testCase
     self.assertEqual(int(expect_one['code']), apijson[0], msg='预期和返回不一致')
 AssertionError: 2011 != 200 : 预期和返回不一致
 
@@ -396,26 +486,26 @@ AssertionError: 2011 != 200 : 预期和返回不一致
     </td>
 </tr>
 
-<tr id='pt1_6' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>testCase14_post请求返回resultcode和task正确</div></td>
+<tr id='pt1_7' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>testCase14</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_pt1_6' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_6'>通过</button>
-    <div id='div_pt1_6' class="collapse">  -->
+    <button id='btn_pt1_7' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_7'>通过</button>
+    <div id='div_pt1_7' class="collapse">  -->
 
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt1_6' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_6'>通过</button>
-    <div style="text-align:left" id='div_pt1_6' class="collapse in">
+    <button id='btn_pt1_7' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_7'>通过</button>
+    <div style="text-align:left" id='div_pt1_7' class="collapse in">
     <pre>
     
-pt1_6: 2018-12-07 10:51:16,690 - root - INFO - 测试用例开始执行
-2018-12-07 10:51:16,691 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos', 'listname': 'post请求返回resultcode和task正确', 'key': 15.0, 'coneent': '{"task":"fourth request"}', 'param_place': '', 'fangshi': 'POST', 'expect1': 'code=202', 'expect2': 'task=fourth request'}
-2018-12-07 10:51:16,696 - root - INFO - 成功发起POST请求，请求结果code为：202, 请求结果字段为：{'task': 'fourth request'}
-2018-12-07 10:51:16,697 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:15.0,参数:{"task":"fourth request"},请求方式：POST
-2018-12-07 10:51:16,698 - root - INFO - 对【code】断言,断言结果--预期值202 == 实际值202
-2018-12-07 10:51:16,699 - root - INFO - 对【task】字段断言,断言结果--预期值fourth request == 实际值fourth request
-2018-12-07 10:51:16,700 - root - INFO - 测试用例执行完毕
-2018-12-07 10:51:16,702 - root - INFO - ----------------------------------
+pt1_7: 2019-03-12 10:58:42,349 - root - INFO - 测试用例开始执行
+2019-03-12 10:58:42,350 - root - INFO - 获取用例数据:{'id': 3.0, 'url': 'http://127.0.0.1:5000/todos', 'name': 'post请求返回resultcode和task正确', 'key': 15.0, 'param': '{"task":"fourth request"}', 'place': '', 'way': 'POST', 'expect1': 'code=202', 'expect2': 'task=fourth request'}
+2019-03-12 10:58:42,355 - root - INFO - 成功发起POST请求，请求结果code为：202, 请求结果字段为：{'task': 'fourth request'}
+2019-03-12 10:58:42,356 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:15.0,参数:{"task":"fourth request"},请求方式：POST
+2019-03-12 10:58:42,357 - root - INFO - 对【code】断言,断言结果--预期值202 == 实际值202
+2019-03-12 10:58:42,358 - root - INFO - 对【task】字段断言,断言结果--预期值fourth request == 实际值fourth request
+2019-03-12 10:58:42,359 - root - INFO - 测试用例执行完毕
+2019-03-12 10:58:42,361 - root - INFO - ----------------------------------
 
 
     </pre>
@@ -423,30 +513,30 @@ pt1_6: 2018-12-07 10:51:16,690 - root - INFO - 测试用例开始执行
     </td>
 </tr>
 
-<tr id='ft1_7' class='none'>
-    <td class='failCase'><div class='testcase'>testCase15_put请求返回task不正确</div></td>
+<tr id='ft1_8' class='none'>
+    <td class='failCase'><div class='testcase'>testCase15</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_7' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_7'>失败</button>
-    <div id='div_ft1_7' class="collapse">  -->
+    <button id='btn_ft1_8' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_8'>失败</button>
+    <div id='div_ft1_8' class="collapse">  -->
 
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_7' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_7'>失败</button>
-    <div style="text-align:left" id='div_ft1_7' class="collapse in">
+    <button id='btn_ft1_8' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_8'>失败</button>
+    <div style="text-align:left" id='div_ft1_8' class="collapse in">
     <pre>
     
-ft1_7: 2018-12-07 10:51:16,703 - root - INFO - 测试用例开始执行
-2018-12-07 10:51:16,704 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos/todo1', 'listname': 'put请求返回task不正确', 'key': 16.0, 'coneent': '{"task":"put success"}', 'param_place': '', 'fangshi': 'PUT', 'expect1': 'code=201', 'expect2': 'task=put succ'}
-2018-12-07 10:51:16,709 - root - INFO - 成功发起PUT请求，请求结果code为：201, 请求结果字段为：{'task': 'put success'}
-2018-12-07 10:51:16,710 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo1,key:16.0,参数:{"task":"put success"},请求方式：PUT
-2018-12-07 10:51:16,712 - root - INFO - 对【code】断言,断言结果--预期值201 == 实际值201
-2018-12-07 10:51:16,713 - root - WARNING - 对【task】字段断言,断言结果--预期值put succ != 实际值put success
-2018-12-07 10:51:16,714 - root - INFO - 测试用例执行完毕
-2018-12-07 10:51:16,715 - root - INFO - ----------------------------------
+ft1_8: 2019-03-12 10:58:42,362 - root - INFO - 测试用例开始执行
+2019-03-12 10:58:42,363 - root - INFO - 获取用例数据:{'id': 4.0, 'url': 'http://127.0.0.1:5000/todos/todo1', 'name': 'put请求返回task不正确', 'key': 16.0, 'param': '{"task":"put success"}', 'place': '', 'way': 'PUT', 'expect1': 'code=201', 'expect2': 'task=put succ'}
+2019-03-12 10:58:42,367 - root - INFO - 成功发起PUT请求，请求结果code为：201, 请求结果字段为：{'task': 'put success'}
+2019-03-12 10:58:42,368 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo1,key:16.0,参数:{"task":"put success"},请求方式：PUT
+2019-03-12 10:58:42,369 - root - INFO - 对【code】断言,断言结果--预期值201 == 实际值201
+2019-03-12 10:58:42,371 - root - WARNING - 对【task】字段断言,断言结果--预期值put succ != 实际值put success
+2019-03-12 10:58:42,372 - root - INFO - 测试用例执行完毕
+2019-03-12 10:58:42,373 - root - INFO - ----------------------------------
 Traceback (most recent call last):
   File "D:\test_software\python\lib\site-packages\ddt.py", line 156, in wrapper
     return func(self, *args, **kwargs)
-  File "F:\git\zhangmoumou1\interface_python\testCase\ddt_case.py", line 40, in testCase
+  File "F:\git\zhangmoumou1\interface_python\testcase\test_case.py", line 40, in testCase
     self.assertEqual(expect_two[data1], apijson[1], msg='预期和返回不一致')
 AssertionError: 'put succ' != 'put success'
 - put succ
@@ -460,117 +550,82 @@ AssertionError: 'put succ' != 'put success'
     </td>
 </tr>
 
-<tr id='pt1_8' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>testCase16_put请求返回resultcode和task正确</div></td>
+<tr id='ft1_9' class='none'>
+    <td class='errorCase'><div class='testcase'>testCase16</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_pt1_8' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_8'>通过</button>
-    <div id='div_pt1_8' class="collapse">  -->
+    <button id='btn_ft1_9' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_9'>错误</button>
+    <div id='div_ft1_9' class="collapse">  -->
 
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt1_8' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_8'>通过</button>
-    <div style="text-align:left" id='div_pt1_8' class="collapse in">
+    <button id='btn_ft1_9' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_9'>错误</button>
+    <div style="text-align:left" id='div_ft1_9' class="collapse in">
     <pre>
     
-pt1_8: 2018-12-07 10:51:16,716 - root - INFO - 测试用例开始执行
-2018-12-07 10:51:16,717 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos/todo2', 'listname': 'put请求返回resultcode和task正确', 'key': 17.0, 'coneent': '{"task":"update success"}', 'param_place': 'database', 'fangshi': 'PUT', 'expect1': 'code=201', 'expect2': 'task=update success'}
-2018-12-07 10:51:16,721 - root - INFO - 当前接口涉及数据库：orderdb
-2018-12-07 10:51:16,789 - root - INFO - 成功登录数据库：orderdb，版本为：8.0.11，执行SQL：select content from blog_blog where id = '7'
-2018-12-07 10:51:16,804 - root - INFO - 查询结果：{"task":"update success"}
-2018-12-07 10:51:16,808 - root - INFO - 数据格式为：{"task":"update success"}
-2018-12-07 10:51:16,821 - root - INFO - 成功发起PUT请求，请求结果code为：201, 请求结果字段为：{'task': 'update success'}
-2018-12-07 10:51:16,824 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo2,key:17.0,参数:{"task":"update success"},请求方式：PUT
-2018-12-07 10:51:16,826 - root - INFO - 对【code】断言,断言结果--预期值201 == 实际值201
-2018-12-07 10:51:16,829 - root - INFO - 对【task】字段断言,断言结果--预期值update success == 实际值update success
-2018-12-07 10:51:16,831 - root - INFO - 测试用例执行完毕
-2018-12-07 10:51:16,834 - root - INFO - ----------------------------------
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt1_9' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>testCase17_delete请求成功删除数据</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt1_9' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_9'>通过</button>
-    <div id='div_pt1_9' class="collapse">  -->
-
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt1_9' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_9'>通过</button>
-    <div style="text-align:left" id='div_pt1_9' class="collapse in">
-    <pre>
-    
-pt1_9: 2018-12-07 10:51:16,836 - root - INFO - 测试用例开始执行
-2018-12-07 10:51:16,838 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos/todo1', 'listname': 'delete请求成功删除数据', 'key': 18.0, 'coneent': 'not argument', 'param_place': '', 'fangshi': 'DELETE', 'expect1': 'code=204', 'expect2': 'param=null'}
-2018-12-07 10:51:16,846 - root - INFO - 成功发起DELETE请求，请求结果code为：204, 请求结果字段为：
-2018-12-07 10:51:16,848 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo1,key:18.0,参数:not argument,请求方式：DELETE
-2018-12-07 10:51:16,849 - root - INFO - 对【code】断言,断言结果--预期值204 == 实际值204
-2018-12-07 10:51:16,850 - root - INFO - 测试用例执行完毕
-2018-12-07 10:51:16,851 - root - INFO - ----------------------------------
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='ft1_10' class='none'>
-    <td class='failCase'><div class='testcase'>testCase1_get请求返回resultcode不正确</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_10' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_10'>失败</button>
-    <div id='div_ft1_10' class="collapse">  -->
-
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_10' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_10'>失败</button>
-    <div style="text-align:left" id='div_ft1_10' class="collapse in">
-    <pre>
-    
-ft1_10: 2018-12-07 10:51:16,853 - root - INFO - 测试用例开始执行
-2018-12-07 10:51:16,854 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos', 'listname': 'get请求返回resultcode不正确', 'key': 2.0, 'coneent': 'not argument', 'param_place': '', 'fangshi': 'GET', 'expect1': 'code=2011', 'expect2': 'param=null'}
-2018-12-07 10:51:16,858 - root - INFO - 成功发起GET请求，请求结果code为：200, 请求结果字段为：{
-    "todo2": {
-        "task": "update success"
-    },
-    "todo3": {
-        "task3": "third request"
-    },
-    "todo4": {
-        "task": "fourth request"
-    },
-    "todo5": {
-        "task": "fourth request"
-    },
-    "todo6": {
-        "task": "fourth request"
-    },
-    "todo7": {
-        "task": "fourth request"
-    },
-    "todo8": {
-        "task": "fourth request"
-    },
-    "todo9": {
-        "task": "fourth request"
-    },
-    "todo10": {
-        "task": "fourth request"
-    }
-}
-
-2018-12-07 10:51:16,859 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:2.0,参数:not argument,请求方式：GET
-2018-12-07 10:51:16,860 - root - WARNING - 对【code】断言,断言结果--预期值2011 != 实际值200
-2018-12-07 10:51:16,862 - root - INFO - 测试用例执行完毕
-2018-12-07 10:51:16,863 - root - INFO - ----------------------------------
+ft1_9: 2019-03-12 10:58:42,374 - root - INFO - 测试用例开始执行
+2019-03-12 10:58:42,375 - root - INFO - 获取用例数据:{'id': 5.0, 'url': 'http://127.0.0.1:5000/todos/todo2', 'name': 'put请求返回resultcode和task正确', 'key': 17.0, 'param': '{"task":"update success"}', 'place': 'database', 'way': 'PUT', 'expect1': 'code=201', 'expect2': 'task=update success'}
+{'paydb': ['http://127.0.0.1:5000/todos', 'http://127.0.0.1:5000/todos/todo1'], 'orderdb': ['http://127.0.0.1:5000/todos/todo2', 'http://127.0.0.1:5000/todos/todo3'], 'contentdb': ['http://127.0.0.1:5000/todos/todo4', 'http://127.0.0.1:5000/todos/todo5']}
+2019-03-12 10:58:42,379 - root - INFO - 当前接口涉及数据库：orderdb
+['116.62.201.163', 'testdb', 'testdb123', 'orderdb']
+{'http://127.0.0.1:5000/todos': "select content from blog_blog where id = '5'", 'http://127.0.0.1:5000/todos/todo1': "select content from blog_blog where id = '6'", 'http://127.0.0.1:5000/todos/todo2': "select content from blog_blog where id = '7'"}
+2019-03-12 10:58:42,409 - root - INFO - 成功登录数据库：orderdb，版本为：8.0.11，执行SQL：select content from blog_blog where id = '7'
+2019-03-12 10:58:42,413 - root - INFO - Error: unable to fetch data
+2019-03-12 10:58:42,415 - root - INFO - 测试用例执行完毕
+2019-03-12 10:58:42,416 - root - INFO - ----------------------------------
 Traceback (most recent call last):
   File "D:\test_software\python\lib\site-packages\ddt.py", line 156, in wrapper
     return func(self, *args, **kwargs)
-  File "F:\git\zhangmoumou1\interface_python\testCase\ddt_case.py", line 33, in testCase
-    self.assertEqual(int(expect_one['code']), apijson[0], msg='预期和返回不一致')
-AssertionError: 2011 != 200 : 预期和返回不一致
+  File "F:\git\zhangmoumou1\interface_python\testcase\test_case.py", line 27, in testCase
+    way=data_test['way'],assertdata=data1,place=data_test['place']).selectway()
+  File "F:\git\zhangmoumou1\interface_python\Public\select_request.py", line 38, in selectway
+    self.response = interface.put(self.url, self.get_param(), self.assertdata)
+  File "F:\git\zhangmoumou1\interface_python\Public\select_request.py", line 25, in get_param
+    post_data = Operate_db(self.database,self.url).Perform()
+  File "F:\git\zhangmoumou1\interface_python\Branch\operate_db.py", line 38, in Perform
+    self.cursor.execute(sql)
+  File "D:\test_software\python\lib\site-packages\pymysql\cursors.py", line 165, in execute
+    result = self._query(query)
+  File "D:\test_software\python\lib\site-packages\pymysql\cursors.py", line 321, in _query
+    conn.query(q)
+  File "D:\test_software\python\lib\site-packages\pymysql\connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\test_software\python\lib\site-packages\pymysql\connections.py", line 1061, in _read_query_result
+    result.read()
+  File "D:\test_software\python\lib\site-packages\pymysql\connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "D:\test_software\python\lib\site-packages\pymysql\connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "D:\test_software\python\lib\site-packages\pymysql\connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\test_software\python\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'orderdb.blog_blog' doesn't exist")
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_10' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>testCase17</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_10' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_10'>通过</button>
+    <div id='div_pt1_10' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_10' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_10'>通过</button>
+    <div style="text-align:left" id='div_pt1_10' class="collapse in">
+    <pre>
+    
+pt1_10: 2019-03-12 10:58:42,417 - root - INFO - 测试用例开始执行
+2019-03-12 10:58:42,418 - root - INFO - 获取用例数据:{'id': 6.0, 'url': 'http://127.0.0.1:5000/todos/todo1', 'name': 'delete请求成功删除数据', 'key': 18.0, 'param': 'not argument', 'place': '', 'way': 'DELETE', 'expect1': 'code=204', 'expect2': 'param=null'}
+2019-03-12 10:58:42,423 - root - INFO - 成功发起DELETE请求，请求结果code为：204, 请求结果字段为：
+2019-03-12 10:58:42,424 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo1,key:18.0,参数:not argument,请求方式：DELETE
+2019-03-12 10:58:42,425 - root - INFO - 对【code】断言,断言结果--预期值204 == 实际值204
+2019-03-12 10:58:42,426 - root - INFO - 测试用例执行完毕
+2019-03-12 10:58:42,427 - root - INFO - ----------------------------------
 
 
     </pre>
@@ -579,7 +634,7 @@ AssertionError: 2011 != 200 : 预期和返回不一致
 </tr>
 
 <tr id='pt1_11' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>testCase2_post请求返回resultcode和task正确</div></td>
+    <td class='passCase'><div class='testcase'>testCase2</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
     <button id='btn_pt1_11' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_11'>通过</button>
@@ -590,14 +645,14 @@ AssertionError: 2011 != 200 : 预期和返回不一致
     <div style="text-align:left" id='div_pt1_11' class="collapse in">
     <pre>
     
-pt1_11: 2018-12-07 10:51:16,864 - root - INFO - 测试用例开始执行
-2018-12-07 10:51:16,865 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos', 'listname': 'post请求返回resultcode和task正确', 'key': 3.0, 'coneent': '{"task":"fourth request"}', 'param_place': '', 'fangshi': 'POST', 'expect1': 'code=202', 'expect2': 'task=fourth request'}
-2018-12-07 10:51:16,870 - root - INFO - 成功发起POST请求，请求结果code为：202, 请求结果字段为：{'task': 'fourth request'}
-2018-12-07 10:51:16,871 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:3.0,参数:{"task":"fourth request"},请求方式：POST
-2018-12-07 10:51:16,872 - root - INFO - 对【code】断言,断言结果--预期值202 == 实际值202
-2018-12-07 10:51:16,873 - root - INFO - 对【task】字段断言,断言结果--预期值fourth request == 实际值fourth request
-2018-12-07 10:51:16,874 - root - INFO - 测试用例执行完毕
-2018-12-07 10:51:16,876 - root - INFO - ----------------------------------
+pt1_11: 2019-03-12 10:58:42,428 - root - INFO - 测试用例开始执行
+2019-03-12 10:58:42,429 - root - INFO - 获取用例数据:{'id': 3.0, 'url': 'http://127.0.0.1:5000/todos', 'name': 'post请求返回resultcode和task正确', 'key': 3.0, 'param': '{"task":"fourth request"}', 'place': '', 'way': 'POST', 'expect1': 'code=202', 'expect2': 'task=fourth request'}
+2019-03-12 10:58:42,433 - root - INFO - 成功发起POST请求，请求结果code为：202, 请求结果字段为：{'task': 'fourth request'}
+2019-03-12 10:58:42,434 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:3.0,参数:{"task":"fourth request"},请求方式：POST
+2019-03-12 10:58:42,435 - root - INFO - 对【code】断言,断言结果--预期值202 == 实际值202
+2019-03-12 10:58:42,437 - root - INFO - 对【task】字段断言,断言结果--预期值fourth request == 实际值fourth request
+2019-03-12 10:58:42,438 - root - INFO - 测试用例执行完毕
+2019-03-12 10:58:42,439 - root - INFO - ----------------------------------
 
 
     </pre>
@@ -606,7 +661,7 @@ pt1_11: 2018-12-07 10:51:16,864 - root - INFO - 测试用例开始执行
 </tr>
 
 <tr id='ft1_12' class='none'>
-    <td class='failCase'><div class='testcase'>testCase3_put请求返回task不正确</div></td>
+    <td class='failCase'><div class='testcase'>testCase3</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
     <button id='btn_ft1_12' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_12'>失败</button>
@@ -617,18 +672,18 @@ pt1_11: 2018-12-07 10:51:16,864 - root - INFO - 测试用例开始执行
     <div style="text-align:left" id='div_ft1_12' class="collapse in">
     <pre>
     
-ft1_12: 2018-12-07 10:51:16,877 - root - INFO - 测试用例开始执行
-2018-12-07 10:51:16,878 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos/todo1', 'listname': 'put请求返回task不正确', 'key': 4.0, 'coneent': '{"task":"put success"}', 'param_place': '', 'fangshi': 'PUT', 'expect1': 'code=201', 'expect2': 'task=put succ'}
-2018-12-07 10:51:16,882 - root - INFO - 成功发起PUT请求，请求结果code为：201, 请求结果字段为：{'task': 'put success'}
-2018-12-07 10:51:16,883 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo1,key:4.0,参数:{"task":"put success"},请求方式：PUT
-2018-12-07 10:51:16,884 - root - INFO - 对【code】断言,断言结果--预期值201 == 实际值201
-2018-12-07 10:51:16,886 - root - WARNING - 对【task】字段断言,断言结果--预期值put succ != 实际值put success
-2018-12-07 10:51:16,887 - root - INFO - 测试用例执行完毕
-2018-12-07 10:51:16,888 - root - INFO - ----------------------------------
+ft1_12: 2019-03-12 10:58:42,440 - root - INFO - 测试用例开始执行
+2019-03-12 10:58:42,442 - root - INFO - 获取用例数据:{'id': 4.0, 'url': 'http://127.0.0.1:5000/todos/todo1', 'name': 'put请求返回task不正确', 'key': 4.0, 'param': '{"task":"put success"}', 'place': '', 'way': 'PUT', 'expect1': 'code=201', 'expect2': 'task=put succ'}
+2019-03-12 10:58:42,446 - root - INFO - 成功发起PUT请求，请求结果code为：201, 请求结果字段为：{'task': 'put success'}
+2019-03-12 10:58:42,447 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo1,key:4.0,参数:{"task":"put success"},请求方式：PUT
+2019-03-12 10:58:42,448 - root - INFO - 对【code】断言,断言结果--预期值201 == 实际值201
+2019-03-12 10:58:42,450 - root - WARNING - 对【task】字段断言,断言结果--预期值put succ != 实际值put success
+2019-03-12 10:58:42,451 - root - INFO - 测试用例执行完毕
+2019-03-12 10:58:42,452 - root - INFO - ----------------------------------
 Traceback (most recent call last):
   File "D:\test_software\python\lib\site-packages\ddt.py", line 156, in wrapper
     return func(self, *args, **kwargs)
-  File "F:\git\zhangmoumou1\interface_python\testCase\ddt_case.py", line 40, in testCase
+  File "F:\git\zhangmoumou1\interface_python\testcase\test_case.py", line 40, in testCase
     self.assertEqual(expect_two[data1], apijson[1], msg='预期和返回不一致')
 AssertionError: 'put succ' != 'put success'
 - put succ
@@ -642,30 +697,56 @@ AssertionError: 'put succ' != 'put success'
     </td>
 </tr>
 
-<tr id='pt1_13' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>testCase4_put请求返回resultcode和task正确</div></td>
+<tr id='ft1_13' class='none'>
+    <td class='errorCase'><div class='testcase'>testCase4</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_pt1_13' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_13'>通过</button>
-    <div id='div_pt1_13' class="collapse">  -->
+    <button id='btn_ft1_13' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_13'>错误</button>
+    <div id='div_ft1_13' class="collapse">  -->
 
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt1_13' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_13'>通过</button>
-    <div style="text-align:left" id='div_pt1_13' class="collapse in">
+    <button id='btn_ft1_13' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_13'>错误</button>
+    <div style="text-align:left" id='div_ft1_13' class="collapse in">
     <pre>
     
-pt1_13: 2018-12-07 10:51:16,889 - root - INFO - 测试用例开始执行
-2018-12-07 10:51:16,890 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos/todo2', 'listname': 'put请求返回resultcode和task正确', 'key': 5.0, 'coneent': '{"task":"update success"}', 'param_place': 'database', 'fangshi': 'PUT', 'expect1': 'code=201', 'expect2': 'task=update success'}
-2018-12-07 10:51:16,894 - root - INFO - 当前接口涉及数据库：orderdb
-2018-12-07 10:51:16,945 - root - INFO - 成功登录数据库：orderdb，版本为：8.0.11，执行SQL：select content from blog_blog where id = '7'
-2018-12-07 10:51:16,957 - root - INFO - 查询结果：{"task":"update success"}
-2018-12-07 10:51:16,962 - root - INFO - 数据格式为：{"task":"update success"}
-2018-12-07 10:51:16,972 - root - INFO - 成功发起PUT请求，请求结果code为：201, 请求结果字段为：{'task': 'update success'}
-2018-12-07 10:51:16,974 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo2,key:5.0,参数:{"task":"update success"},请求方式：PUT
-2018-12-07 10:51:16,976 - root - INFO - 对【code】断言,断言结果--预期值201 == 实际值201
-2018-12-07 10:51:16,977 - root - INFO - 对【task】字段断言,断言结果--预期值update success == 实际值update success
-2018-12-07 10:51:16,979 - root - INFO - 测试用例执行完毕
-2018-12-07 10:51:16,981 - root - INFO - ----------------------------------
+ft1_13: 2019-03-12 10:58:42,453 - root - INFO - 测试用例开始执行
+2019-03-12 10:58:42,454 - root - INFO - 获取用例数据:{'id': 5.0, 'url': 'http://127.0.0.1:5000/todos/todo2', 'name': 'put请求返回resultcode和task正确', 'key': 5.0, 'param': '{"task":"update success"}', 'place': 'database', 'way': 'PUT', 'expect1': 'code=201', 'expect2': 'task=update success'}
+{'paydb': ['http://127.0.0.1:5000/todos', 'http://127.0.0.1:5000/todos/todo1'], 'orderdb': ['http://127.0.0.1:5000/todos/todo2', 'http://127.0.0.1:5000/todos/todo3'], 'contentdb': ['http://127.0.0.1:5000/todos/todo4', 'http://127.0.0.1:5000/todos/todo5']}
+2019-03-12 10:58:42,458 - root - INFO - 当前接口涉及数据库：orderdb
+['116.62.201.163', 'testdb', 'testdb123', 'orderdb']
+{'http://127.0.0.1:5000/todos': "select content from blog_blog where id = '5'", 'http://127.0.0.1:5000/todos/todo1': "select content from blog_blog where id = '6'", 'http://127.0.0.1:5000/todos/todo2': "select content from blog_blog where id = '7'"}
+2019-03-12 10:58:42,482 - root - INFO - 成功登录数据库：orderdb，版本为：8.0.11，执行SQL：select content from blog_blog where id = '7'
+2019-03-12 10:58:42,487 - root - INFO - Error: unable to fetch data
+2019-03-12 10:58:42,489 - root - INFO - 测试用例执行完毕
+2019-03-12 10:58:42,490 - root - INFO - ----------------------------------
+Traceback (most recent call last):
+  File "D:\test_software\python\lib\site-packages\ddt.py", line 156, in wrapper
+    return func(self, *args, **kwargs)
+  File "F:\git\zhangmoumou1\interface_python\testcase\test_case.py", line 27, in testCase
+    way=data_test['way'],assertdata=data1,place=data_test['place']).selectway()
+  File "F:\git\zhangmoumou1\interface_python\Public\select_request.py", line 38, in selectway
+    self.response = interface.put(self.url, self.get_param(), self.assertdata)
+  File "F:\git\zhangmoumou1\interface_python\Public\select_request.py", line 25, in get_param
+    post_data = Operate_db(self.database,self.url).Perform()
+  File "F:\git\zhangmoumou1\interface_python\Branch\operate_db.py", line 38, in Perform
+    self.cursor.execute(sql)
+  File "D:\test_software\python\lib\site-packages\pymysql\cursors.py", line 165, in execute
+    result = self._query(query)
+  File "D:\test_software\python\lib\site-packages\pymysql\cursors.py", line 321, in _query
+    conn.query(q)
+  File "D:\test_software\python\lib\site-packages\pymysql\connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\test_software\python\lib\site-packages\pymysql\connections.py", line 1061, in _read_query_result
+    result.read()
+  File "D:\test_software\python\lib\site-packages\pymysql\connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "D:\test_software\python\lib\site-packages\pymysql\connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "D:\test_software\python\lib\site-packages\pymysql\connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\test_software\python\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'orderdb.blog_blog' doesn't exist")
 
 
     </pre>
@@ -674,7 +755,7 @@ pt1_13: 2018-12-07 10:51:16,889 - root - INFO - 测试用例开始执行
 </tr>
 
 <tr id='pt1_14' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>testCase5_delete请求成功删除数据</div></td>
+    <td class='passCase'><div class='testcase'>testCase5</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
     <button id='btn_pt1_14' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_14'>通过</button>
@@ -685,13 +766,13 @@ pt1_13: 2018-12-07 10:51:16,889 - root - INFO - 测试用例开始执行
     <div style="text-align:left" id='div_pt1_14' class="collapse in">
     <pre>
     
-pt1_14: 2018-12-07 10:51:16,983 - root - INFO - 测试用例开始执行
-2018-12-07 10:51:16,984 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos/todo1', 'listname': 'delete请求成功删除数据', 'key': 6.0, 'coneent': 'not argument', 'param_place': '', 'fangshi': 'DELETE', 'expect1': 'code=204', 'expect2': 'param=null'}
-2018-12-07 10:51:16,991 - root - INFO - 成功发起DELETE请求，请求结果code为：204, 请求结果字段为：
-2018-12-07 10:51:16,992 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo1,key:6.0,参数:not argument,请求方式：DELETE
-2018-12-07 10:51:16,994 - root - INFO - 对【code】断言,断言结果--预期值204 == 实际值204
-2018-12-07 10:51:16,996 - root - INFO - 测试用例执行完毕
-2018-12-07 10:51:16,998 - root - INFO - ----------------------------------
+pt1_14: 2019-03-12 10:58:42,491 - root - INFO - 测试用例开始执行
+2019-03-12 10:58:42,492 - root - INFO - 获取用例数据:{'id': 6.0, 'url': 'http://127.0.0.1:5000/todos/todo1', 'name': 'delete请求成功删除数据', 'key': 6.0, 'param': 'not argument', 'place': '', 'way': 'DELETE', 'expect1': 'code=204', 'expect2': 'param=null'}
+2019-03-12 10:58:42,497 - root - INFO - 成功发起DELETE请求，请求结果code为：204, 请求结果字段为：
+2019-03-12 10:58:42,498 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo1,key:6.0,参数:not argument,请求方式：DELETE
+2019-03-12 10:58:42,499 - root - INFO - 对【code】断言,断言结果--预期值204 == 实际值204
+2019-03-12 10:58:42,500 - root - INFO - 测试用例执行完毕
+2019-03-12 10:58:42,501 - root - INFO - ----------------------------------
 
 
     </pre>
@@ -700,7 +781,7 @@ pt1_14: 2018-12-07 10:51:16,983 - root - INFO - 测试用例开始执行
 </tr>
 
 <tr id='pt1_15' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>testCase6_get请求返回resultcode正确</div></td>
+    <td class='passCase'><div class='testcase'>testCase6</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
     <button id='btn_pt1_15' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_15'>通过</button>
@@ -711,11 +792,11 @@ pt1_14: 2018-12-07 10:51:16,983 - root - INFO - 测试用例开始执行
     <div style="text-align:left" id='div_pt1_15' class="collapse in">
     <pre>
     
-pt1_15: 2018-12-07 10:51:16,999 - root - INFO - 测试用例开始执行
-2018-12-07 10:51:17,001 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos', 'listname': 'get请求返回resultcode正确', 'key': 7.0, 'coneent': 'not argument', 'param_place': '', 'fangshi': 'GET', 'expect1': 'code=200', 'expect2': 'param=null'}
-2018-12-07 10:51:17,007 - root - INFO - 成功发起GET请求，请求结果code为：200, 请求结果字段为：{
+pt1_15: 2019-03-12 10:58:42,502 - root - INFO - 测试用例开始执行
+2019-03-12 10:58:42,503 - root - INFO - 获取用例数据:{'id': 1.0, 'url': 'http://127.0.0.1:5000/todos', 'name': 'get请求返回resultcode正确', 'key': 7.0, 'param': 'not argument', 'place': '', 'way': 'GET', 'expect1': 'code=200', 'expect2': 'param=null'}
+2019-03-12 10:58:42,507 - root - INFO - 成功发起GET请求，请求结果code为：200, 请求结果字段为：{
     "todo2": {
-        "task": "update success"
+        "task2": "second request"
     },
     "todo3": {
         "task3": "third request"
@@ -743,10 +824,10 @@ pt1_15: 2018-12-07 10:51:16,999 - root - INFO - 测试用例开始执行
     }
 }
 
-2018-12-07 10:51:17,008 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:7.0,参数:not argument,请求方式：GET
-2018-12-07 10:51:17,010 - root - INFO - 对【code】断言,断言结果--预期值200 == 实际值200
-2018-12-07 10:51:17,011 - root - INFO - 测试用例执行完毕
-2018-12-07 10:51:17,012 - root - INFO - ----------------------------------
+2019-03-12 10:58:42,508 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:7.0,参数:not argument,请求方式：GET
+2019-03-12 10:58:42,510 - root - INFO - 对【code】断言,断言结果--预期值200 == 实际值200
+2019-03-12 10:58:42,511 - root - INFO - 测试用例执行完毕
+2019-03-12 10:58:42,512 - root - INFO - ----------------------------------
 
 
     </pre>
@@ -755,7 +836,7 @@ pt1_15: 2018-12-07 10:51:16,999 - root - INFO - 测试用例开始执行
 </tr>
 
 <tr id='ft1_16' class='none'>
-    <td class='failCase'><div class='testcase'>testCase7_get请求返回resultcode不正确</div></td>
+    <td class='failCase'><div class='testcase'>testCase7</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
     <button id='btn_ft1_16' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_16'>失败</button>
@@ -766,11 +847,11 @@ pt1_15: 2018-12-07 10:51:16,999 - root - INFO - 测试用例开始执行
     <div style="text-align:left" id='div_ft1_16' class="collapse in">
     <pre>
     
-ft1_16: 2018-12-07 10:51:17,014 - root - INFO - 测试用例开始执行
-2018-12-07 10:51:17,015 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos', 'listname': 'get请求返回resultcode不正确', 'key': 8.0, 'coneent': 'not argument', 'param_place': '', 'fangshi': 'GET', 'expect1': 'code=2011', 'expect2': 'param=null'}
-2018-12-07 10:51:17,020 - root - INFO - 成功发起GET请求，请求结果code为：200, 请求结果字段为：{
+ft1_16: 2019-03-12 10:58:42,513 - root - INFO - 测试用例开始执行
+2019-03-12 10:58:42,514 - root - INFO - 获取用例数据:{'id': 2.0, 'url': 'http://127.0.0.1:5000/todos', 'name': 'get请求返回resultcode不正确', 'key': 8.0, 'param': 'not argument', 'place': '', 'way': 'GET', 'expect1': 'code=2011', 'expect2': 'param=null'}
+2019-03-12 10:58:42,518 - root - INFO - 成功发起GET请求，请求结果code为：200, 请求结果字段为：{
     "todo2": {
-        "task": "update success"
+        "task2": "second request"
     },
     "todo3": {
         "task3": "third request"
@@ -798,14 +879,14 @@ ft1_16: 2018-12-07 10:51:17,014 - root - INFO - 测试用例开始执行
     }
 }
 
-2018-12-07 10:51:17,022 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:8.0,参数:not argument,请求方式：GET
-2018-12-07 10:51:17,023 - root - WARNING - 对【code】断言,断言结果--预期值2011 != 实际值200
-2018-12-07 10:51:17,024 - root - INFO - 测试用例执行完毕
-2018-12-07 10:51:17,026 - root - INFO - ----------------------------------
+2019-03-12 10:58:42,519 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:8.0,参数:not argument,请求方式：GET
+2019-03-12 10:58:42,520 - root - WARNING - 对【code】断言,断言结果--预期值2011 != 实际值200
+2019-03-12 10:58:42,521 - root - INFO - 测试用例执行完毕
+2019-03-12 10:58:42,523 - root - INFO - ----------------------------------
 Traceback (most recent call last):
   File "D:\test_software\python\lib\site-packages\ddt.py", line 156, in wrapper
     return func(self, *args, **kwargs)
-  File "F:\git\zhangmoumou1\interface_python\testCase\ddt_case.py", line 33, in testCase
+  File "F:\git\zhangmoumou1\interface_python\testcase\test_case.py", line 33, in testCase
     self.assertEqual(int(expect_one['code']), apijson[0], msg='预期和返回不一致')
 AssertionError: 2011 != 200 : 预期和返回不一致
 
@@ -816,7 +897,7 @@ AssertionError: 2011 != 200 : 预期和返回不一致
 </tr>
 
 <tr id='pt1_17' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>testCase8_post请求返回resultcode和task正确</div></td>
+    <td class='passCase'><div class='testcase'>testCase8</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
     <button id='btn_pt1_17' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_17'>通过</button>
@@ -827,14 +908,14 @@ AssertionError: 2011 != 200 : 预期和返回不一致
     <div style="text-align:left" id='div_pt1_17' class="collapse in">
     <pre>
     
-pt1_17: 2018-12-07 10:51:17,027 - root - INFO - 测试用例开始执行
-2018-12-07 10:51:17,028 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos', 'listname': 'post请求返回resultcode和task正确', 'key': 9.0, 'coneent': '{"task":"fourth request"}', 'param_place': '', 'fangshi': 'POST', 'expect1': 'code=202', 'expect2': 'task=fourth request'}
-2018-12-07 10:51:17,033 - root - INFO - 成功发起POST请求，请求结果code为：202, 请求结果字段为：{'task': 'fourth request'}
-2018-12-07 10:51:17,034 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:9.0,参数:{"task":"fourth request"},请求方式：POST
-2018-12-07 10:51:17,035 - root - INFO - 对【code】断言,断言结果--预期值202 == 实际值202
-2018-12-07 10:51:17,037 - root - INFO - 对【task】字段断言,断言结果--预期值fourth request == 实际值fourth request
-2018-12-07 10:51:17,038 - root - INFO - 测试用例执行完毕
-2018-12-07 10:51:17,039 - root - INFO - ----------------------------------
+pt1_17: 2019-03-12 10:58:42,524 - root - INFO - 测试用例开始执行
+2019-03-12 10:58:42,525 - root - INFO - 获取用例数据:{'id': 3.0, 'url': 'http://127.0.0.1:5000/todos', 'name': 'post请求返回resultcode和task正确', 'key': 9.0, 'param': '{"task":"fourth request"}', 'place': '', 'way': 'POST', 'expect1': 'code=202', 'expect2': 'task=fourth request'}
+2019-03-12 10:58:42,529 - root - INFO - 成功发起POST请求，请求结果code为：202, 请求结果字段为：{'task': 'fourth request'}
+2019-03-12 10:58:42,531 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:9.0,参数:{"task":"fourth request"},请求方式：POST
+2019-03-12 10:58:42,532 - root - INFO - 对【code】断言,断言结果--预期值202 == 实际值202
+2019-03-12 10:58:42,533 - root - INFO - 对【task】字段断言,断言结果--预期值fourth request == 实际值fourth request
+2019-03-12 10:58:42,534 - root - INFO - 测试用例执行完毕
+2019-03-12 10:58:42,535 - root - INFO - ----------------------------------
 
 
     </pre>
@@ -843,7 +924,7 @@ pt1_17: 2018-12-07 10:51:17,027 - root - INFO - 测试用例开始执行
 </tr>
 
 <tr id='ft1_18' class='none'>
-    <td class='failCase'><div class='testcase'>testCase9_put请求返回task不正确</div></td>
+    <td class='failCase'><div class='testcase'>testCase9</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
     <button id='btn_ft1_18' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_18'>失败</button>
@@ -854,18 +935,18 @@ pt1_17: 2018-12-07 10:51:17,027 - root - INFO - 测试用例开始执行
     <div style="text-align:left" id='div_ft1_18' class="collapse in">
     <pre>
     
-ft1_18: 2018-12-07 10:51:17,040 - root - INFO - 测试用例开始执行
-2018-12-07 10:51:17,041 - root - INFO - 获取用例数据:{'url': 'http://127.0.0.1:5000/todos/todo1', 'listname': 'put请求返回task不正确', 'key': 10.0, 'coneent': '{"task":"put success"}', 'param_place': '', 'fangshi': 'PUT', 'expect1': 'code=201', 'expect2': 'task=put succ'}
-2018-12-07 10:51:17,046 - root - INFO - 成功发起PUT请求，请求结果code为：201, 请求结果字段为：{'task': 'put success'}
-2018-12-07 10:51:17,047 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo1,key:10.0,参数:{"task":"put success"},请求方式：PUT
-2018-12-07 10:51:17,048 - root - INFO - 对【code】断言,断言结果--预期值201 == 实际值201
-2018-12-07 10:51:17,049 - root - WARNING - 对【task】字段断言,断言结果--预期值put succ != 实际值put success
-2018-12-07 10:51:17,050 - root - INFO - 测试用例执行完毕
-2018-12-07 10:51:17,051 - root - INFO - ----------------------------------
+ft1_18: 2019-03-12 10:58:42,536 - root - INFO - 测试用例开始执行
+2019-03-12 10:58:42,537 - root - INFO - 获取用例数据:{'id': 4.0, 'url': 'http://127.0.0.1:5000/todos/todo1', 'name': 'put请求返回task不正确', 'key': 10.0, 'param': '{"task":"put success"}', 'place': '', 'way': 'PUT', 'expect1': 'code=201', 'expect2': 'task=put succ'}
+2019-03-12 10:58:42,541 - root - INFO - 成功发起PUT请求，请求结果code为：201, 请求结果字段为：{'task': 'put success'}
+2019-03-12 10:58:42,543 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo1,key:10.0,参数:{"task":"put success"},请求方式：PUT
+2019-03-12 10:58:42,544 - root - INFO - 对【code】断言,断言结果--预期值201 == 实际值201
+2019-03-12 10:58:42,545 - root - WARNING - 对【task】字段断言,断言结果--预期值put succ != 实际值put success
+2019-03-12 10:58:42,546 - root - INFO - 测试用例执行完毕
+2019-03-12 10:58:42,547 - root - INFO - ----------------------------------
 Traceback (most recent call last):
   File "D:\test_software\python\lib\site-packages\ddt.py", line 156, in wrapper
     return func(self, *args, **kwargs)
-  File "F:\git\zhangmoumou1\interface_python\testCase\ddt_case.py", line 40, in testCase
+  File "F:\git\zhangmoumou1\interface_python\testcase\test_case.py", line 40, in testCase
     self.assertEqual(expect_two[data1], apijson[1], msg='预期和返回不一致')
 AssertionError: 'put succ' != 'put success'
 - put succ
@@ -882,10 +963,10 @@ AssertionError: 'put succ' != 'put success'
 <tr id='total_row' class="text-center active">
     <td>总计</td>
     <td>18</td>
-    <td>12</td>
+    <td>9</td>
     <td>6</td>
-    <td>0</td>
-    <td>通过率：66.67%</td>
+    <td>3</td>
+    <td>通过率：50.00%</td>
 </tr>
 </table>
 

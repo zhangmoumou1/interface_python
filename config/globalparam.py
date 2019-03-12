@@ -1,7 +1,7 @@
 #coding=utf-8
 import os
 
-from branch.readconfig import ReadConfig
+from config.readconfig import ReadConfig
 
 # Read configuration file
 config_file_path = os.path.split(os.path.realpath(__file__))[0]

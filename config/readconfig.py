@@ -5,7 +5,7 @@ import codecs
 
 class ReadConfig:
     """
-    专门读取配置文件的，.ini文件格式
+    读取ini配置文件
     """
     def __init__(self, filename):
         # configpath = os.path.join(prjDir,filename)
