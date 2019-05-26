@@ -1,2 +1,0 @@
-2019-03-16 14:05:28,460 - root - INFO - 测试用例开始执行
-2019-03-16 14:05:28,461 - root - INFO - 获取用例数据:{'expect2': 'task=put succ', 'name': 'put请求返回task不正确', 'id': 4.0, 'url': 'http://127.0.0.1:5000/todos/todo1', 'key': 10.0, 'expect1': 'code=201', 'param': '{"task":"put success"}', 'place': '', 'way': 'PUT'}

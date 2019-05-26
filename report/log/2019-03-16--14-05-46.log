@@ -1,6 +1,0 @@
-2019-03-16 14:05:46,131 - root - ERROR - get请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /todos?not%20argument (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000003CBD630>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
-2019-03-16 14:05:46,135 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:8.0,参数:not argument,请求方式：GET
-2019-03-16 14:05:46,136 - root - INFO - 测试用例执行完毕
-2019-03-16 14:05:46,136 - root - INFO - ----------------------------------
-2019-03-16 14:05:46,138 - root - INFO - 测试用例开始执行
-2019-03-16 14:05:46,140 - root - INFO - 获取用例数据:{'expect2': 'task=fourth request', 'name': 'post请求返回resultcode和task正确', 'id': 3.0, 'url': 'http://127.0.0.1:5000/todos', 'key': 9.0, 'expect1': 'code=202', 'param': '{"task":"fourth request"}', 'place': '', 'way': 'POST'}

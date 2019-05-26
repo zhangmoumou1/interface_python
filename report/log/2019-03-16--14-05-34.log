@@ -1,6 +1,0 @@
-2019-03-16 14:05:34,741 - root - ERROR - post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /todos (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000003CCA278>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
-2019-03-16 14:05:34,743 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:15.0,参数:{"task":"fourth request"},请求方式：POST
-2019-03-16 14:05:34,745 - root - INFO - 测试用例执行完毕
-2019-03-16 14:05:34,748 - root - INFO - ----------------------------------
-2019-03-16 14:05:34,752 - root - INFO - 测试用例开始执行
-2019-03-16 14:05:34,754 - root - INFO - 获取用例数据:{'expect2': 'task=put succ', 'name': 'put请求返回task不正确', 'id': 4.0, 'url': 'http://127.0.0.1:5000/todos/todo1', 'key': 16.0, 'expect1': 'code=201', 'param': '{"task":"put success"}', 'place': '', 'way': 'PUT'}
