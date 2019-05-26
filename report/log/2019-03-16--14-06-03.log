@@ -1,0 +1,148 @@
+2019-03-16 14:06:03,638 - root - INFO - 测试用例开始执行
+2019-03-16 14:06:03,639 - root - INFO - 获取用例数据:{'param': '{"task":"put success"}', 'expect1': 'code=201', 'way': 'PUT', 'id': 4.0, 'url': 'http://127.0.0.1:5000/todos/todo1', 'place': '', 'expect2': 'task=put succ', 'key': 10.0, 'name': 'put请求返回task不正确'}
+2019-03-16 14:06:03,651 - root - INFO - 成功发起PUT请求，请求结果code为：201, 请求结果字段为：{'task': 'put success'}
+2019-03-16 14:06:03,651 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo1,key:10.0,参数:{"task":"put success"},请求方式：PUT
+2019-03-16 14:06:03,652 - root - INFO - 对【code】断言,断言结果--预期值201 == 实际值201
+2019-03-16 14:06:03,653 - root - WARNING - 对【task】字段断言,断言结果--预期值put succ != 实际值put success
+2019-03-16 14:06:03,654 - root - INFO - 测试用例执行完毕
+2019-03-16 14:06:03,655 - root - INFO - ----------------------------------
+2019-03-16 14:06:03,656 - root - INFO - 测试用例开始执行
+2019-03-16 14:06:03,657 - root - INFO - 获取用例数据:{'param': '{"task":"update success"}', 'expect1': 'code=201', 'way': 'PUT', 'id': 5.0, 'url': 'http://127.0.0.1:5000/todos/todo2', 'place': 'database', 'expect2': 'task=update success', 'key': 11.0, 'name': 'put请求返回resultcode和task正确'}
+2019-03-16 14:06:03,661 - root - INFO - 当前接口涉及数据库：orderdb
+2019-03-16 14:06:03,705 - root - INFO - 成功登录数据库：orderdb，版本为：8.0.11，执行SQL：select content from blog_blog where id = '7'
+2019-03-16 14:06:03,714 - root - INFO - 查询结果：{"task":"update success"}
+2019-03-16 14:06:03,715 - root - INFO - 数据格式为：{"task":"update success"}
+2019-03-16 14:06:03,720 - root - INFO - 成功发起PUT请求，请求结果code为：201, 请求结果字段为：{'task': 'update success'}
+2019-03-16 14:06:03,721 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo2,key:11.0,参数:{"task":"update success"},请求方式：PUT
+2019-03-16 14:06:03,721 - root - INFO - 对【code】断言,断言结果--预期值201 == 实际值201
+2019-03-16 14:06:03,722 - root - INFO - 对【task】字段断言,断言结果--预期值update success == 实际值update success
+2019-03-16 14:06:03,723 - root - INFO - 测试用例执行完毕
+2019-03-16 14:06:03,723 - root - INFO - ----------------------------------
+2019-03-16 14:06:03,724 - root - INFO - 测试用例开始执行
+2019-03-16 14:06:03,725 - root - INFO - 获取用例数据:{'param': 'not argument', 'expect1': 'code=204', 'way': 'DELETE', 'id': 6.0, 'url': 'http://127.0.0.1:5000/todos/todo1', 'place': '', 'expect2': 'param=null', 'key': 12.0, 'name': 'delete请求成功删除数据'}
+2019-03-16 14:06:03,729 - root - INFO - 成功发起DELETE请求，请求结果code为：204, 请求结果字段为：
+2019-03-16 14:06:03,730 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo1,key:12.0,参数:not argument,请求方式：DELETE
+2019-03-16 14:06:03,731 - root - INFO - 对【code】断言,断言结果--预期值204 == 实际值204
+2019-03-16 14:06:03,731 - root - INFO - 测试用例执行完毕
+2019-03-16 14:06:03,732 - root - INFO - ----------------------------------
+2019-03-16 14:06:03,732 - root - INFO - 测试用例开始执行
+2019-03-16 14:06:03,734 - root - INFO - 获取用例数据:{'param': 'not argument', 'expect1': 'code=200', 'way': 'GET', 'id': 1.0, 'url': 'http://127.0.0.1:5000/todos', 'place': '', 'expect2': 'param=null', 'key': 13.0, 'name': 'get请求返回resultcode正确'}
+2019-03-16 14:06:03,739 - root - INFO - 成功发起GET请求，请求结果code为：200, 请求结果字段为：{
+    "todo3": {
+        "task3": "third request"
+    },
+    "todo2": {
+        "task": "update success"
+    }
+}
+
+2019-03-16 14:06:03,739 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:13.0,参数:not argument,请求方式：GET
+2019-03-16 14:06:03,740 - root - INFO - 对【code】断言,断言结果--预期值200 == 实际值200
+2019-03-16 14:06:03,741 - root - INFO - 测试用例执行完毕
+2019-03-16 14:06:03,741 - root - INFO - ----------------------------------
+2019-03-16 14:06:03,742 - root - INFO - 测试用例开始执行
+2019-03-16 14:06:03,743 - root - INFO - 获取用例数据:{'param': 'not argument', 'expect1': 'code=2011', 'way': 'GET', 'id': 2.0, 'url': 'http://127.0.0.1:5000/todos', 'place': '', 'expect2': 'param=null', 'key': 14.0, 'name': 'get请求返回resultcode不正确'}
+2019-03-16 14:06:03,748 - root - INFO - 成功发起GET请求，请求结果code为：200, 请求结果字段为：{
+    "todo3": {
+        "task3": "third request"
+    },
+    "todo2": {
+        "task": "update success"
+    }
+}
+
+2019-03-16 14:06:03,749 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:14.0,参数:not argument,请求方式：GET
+2019-03-16 14:06:03,750 - root - WARNING - 对【code】断言,断言结果--预期值2011 != 实际值200
+2019-03-16 14:06:03,751 - root - INFO - 测试用例执行完毕
+2019-03-16 14:06:03,751 - root - INFO - ----------------------------------
+2019-03-16 14:06:03,752 - root - INFO - 测试用例开始执行
+2019-03-16 14:06:03,753 - root - INFO - 获取用例数据:{'param': '{"task":"fourth request"}', 'expect1': 'code=202', 'way': 'POST', 'id': 3.0, 'url': 'http://127.0.0.1:5000/todos', 'place': '', 'expect2': 'task=fourth request', 'key': 15.0, 'name': 'post请求返回resultcode和task正确'}
+2019-03-16 14:06:03,758 - root - INFO - 成功发起POST请求，请求结果code为：202, 请求结果字段为：{'task': 'fourth request'}
+2019-03-16 14:06:03,759 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:15.0,参数:{"task":"fourth request"},请求方式：POST
+2019-03-16 14:06:03,760 - root - INFO - 对【code】断言,断言结果--预期值202 == 实际值202
+2019-03-16 14:06:03,761 - root - INFO - 对【task】字段断言,断言结果--预期值fourth request == 实际值fourth request
+2019-03-16 14:06:03,762 - root - INFO - 测试用例执行完毕
+2019-03-16 14:06:03,762 - root - INFO - ----------------------------------
+2019-03-16 14:06:03,763 - root - INFO - 测试用例开始执行
+2019-03-16 14:06:03,764 - root - INFO - 获取用例数据:{'param': '{"task":"put success"}', 'expect1': 'code=201', 'way': 'PUT', 'id': 4.0, 'url': 'http://127.0.0.1:5000/todos/todo1', 'place': '', 'expect2': 'task=put succ', 'key': 16.0, 'name': 'put请求返回task不正确'}
+2019-03-16 14:06:03,769 - root - INFO - 成功发起PUT请求，请求结果code为：201, 请求结果字段为：{'task': 'put success'}
+2019-03-16 14:06:03,770 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo1,key:16.0,参数:{"task":"put success"},请求方式：PUT
+2019-03-16 14:06:03,771 - root - INFO - 对【code】断言,断言结果--预期值201 == 实际值201
+2019-03-16 14:06:03,772 - root - WARNING - 对【task】字段断言,断言结果--预期值put succ != 实际值put success
+2019-03-16 14:06:03,772 - root - INFO - 测试用例执行完毕
+2019-03-16 14:06:03,773 - root - INFO - ----------------------------------
+2019-03-16 14:06:03,774 - root - INFO - 测试用例开始执行
+2019-03-16 14:06:03,775 - root - INFO - 获取用例数据:{'param': '{"task":"update success"}', 'expect1': 'code=201', 'way': 'PUT', 'id': 5.0, 'url': 'http://127.0.0.1:5000/todos/todo2', 'place': 'database', 'expect2': 'task=update success', 'key': 17.0, 'name': 'put请求返回resultcode和task正确'}
+2019-03-16 14:06:03,779 - root - INFO - 当前接口涉及数据库：orderdb
+2019-03-16 14:06:03,856 - root - INFO - 成功登录数据库：orderdb，版本为：8.0.11，执行SQL：select content from blog_blog where id = '7'
+2019-03-16 14:06:03,871 - root - INFO - 查询结果：{"task":"update success"}
+2019-03-16 14:06:03,872 - root - INFO - 数据格式为：{"task":"update success"}
+2019-03-16 14:06:03,879 - root - INFO - 成功发起PUT请求，请求结果code为：201, 请求结果字段为：{'task': 'update success'}
+2019-03-16 14:06:03,880 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo2,key:17.0,参数:{"task":"update success"},请求方式：PUT
+2019-03-16 14:06:03,880 - root - INFO - 对【code】断言,断言结果--预期值201 == 实际值201
+2019-03-16 14:06:03,881 - root - INFO - 对【task】字段断言,断言结果--预期值update success == 实际值update success
+2019-03-16 14:06:03,881 - root - INFO - 测试用例执行完毕
+2019-03-16 14:06:03,882 - root - INFO - ----------------------------------
+2019-03-16 14:06:03,882 - root - INFO - 测试用例开始执行
+2019-03-16 14:06:03,883 - root - INFO - 获取用例数据:{'param': 'not argument', 'expect1': 'code=204', 'way': 'DELETE', 'id': 6.0, 'url': 'http://127.0.0.1:5000/todos/todo1', 'place': '', 'expect2': 'param=null', 'key': 18.0, 'name': 'delete请求成功删除数据'}
+2019-03-16 14:06:03,889 - root - INFO - 成功发起DELETE请求，请求结果code为：204, 请求结果字段为：
+2019-03-16 14:06:03,889 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo1,key:18.0,参数:not argument,请求方式：DELETE
+2019-03-16 14:06:03,890 - root - INFO - 对【code】断言,断言结果--预期值204 == 实际值204
+2019-03-16 14:06:03,890 - root - INFO - 测试用例执行完毕
+2019-03-16 14:06:03,890 - root - INFO - ----------------------------------
+2019-03-16 14:06:03,891 - root - INFO - 测试用例开始执行
+2019-03-16 14:06:03,891 - root - INFO - 获取用例数据:{'param': 'not argument', 'expect1': 'code=200', 'way': 'GET', 'id': 1.0, 'url': 'http://127.0.0.1:5000/todos', 'place': '', 'expect2': 'param=null', 'key': 1.0, 'name': 'get请求返回resultcode正确'}
+2019-03-16 14:06:03,896 - root - INFO - 成功发起GET请求，请求结果code为：200, 请求结果字段为：{
+    "todo3": {
+        "task3": "third request"
+    },
+    "todo4": {
+        "task": "fourth request"
+    },
+    "todo2": {
+        "task": "update success"
+    }
+}
+
+2019-03-16 14:06:03,896 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:1.0,参数:not argument,请求方式：GET
+2019-03-16 14:06:03,897 - root - INFO - 对【code】断言,断言结果--预期值200 == 实际值200
+2019-03-16 14:06:03,897 - root - INFO - 测试用例执行完毕
+2019-03-16 14:06:03,897 - root - INFO - ----------------------------------
+2019-03-16 14:06:03,898 - root - INFO - 测试用例开始执行
+2019-03-16 14:06:03,898 - root - INFO - 获取用例数据:{'param': 'not argument', 'expect1': 'code=2011', 'way': 'GET', 'id': 2.0, 'url': 'http://127.0.0.1:5000/todos', 'place': '', 'expect2': 'param=null', 'key': 2.0, 'name': 'get请求返回resultcode不正确'}
+2019-03-16 14:06:03,903 - root - INFO - 成功发起GET请求，请求结果code为：200, 请求结果字段为：{
+    "todo3": {
+        "task3": "third request"
+    },
+    "todo4": {
+        "task": "fourth request"
+    },
+    "todo2": {
+        "task": "update success"
+    }
+}
+
+2019-03-16 14:06:03,904 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:2.0,参数:not argument,请求方式：GET
+2019-03-16 14:06:03,904 - root - WARNING - 对【code】断言,断言结果--预期值2011 != 实际值200
+2019-03-16 14:06:03,905 - root - INFO - 测试用例执行完毕
+2019-03-16 14:06:03,905 - root - INFO - ----------------------------------
+2019-03-16 14:06:03,905 - root - INFO - 测试用例开始执行
+2019-03-16 14:06:03,906 - root - INFO - 获取用例数据:{'param': '{"task":"fourth request"}', 'expect1': 'code=202', 'way': 'POST', 'id': 3.0, 'url': 'http://127.0.0.1:5000/todos', 'place': '', 'expect2': 'task=fourth request', 'key': 3.0, 'name': 'post请求返回resultcode和task正确'}
+2019-03-16 14:06:03,911 - root - INFO - 成功发起POST请求，请求结果code为：202, 请求结果字段为：{'task': 'fourth request'}
+2019-03-16 14:06:03,912 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos,key:3.0,参数:{"task":"fourth request"},请求方式：POST
+2019-03-16 14:06:03,912 - root - INFO - 对【code】断言,断言结果--预期值202 == 实际值202
+2019-03-16 14:06:03,912 - root - INFO - 对【task】字段断言,断言结果--预期值fourth request == 实际值fourth request
+2019-03-16 14:06:03,913 - root - INFO - 测试用例执行完毕
+2019-03-16 14:06:03,913 - root - INFO - ----------------------------------
+2019-03-16 14:06:03,913 - root - INFO - 测试用例开始执行
+2019-03-16 14:06:03,914 - root - INFO - 获取用例数据:{'param': '{"task":"put success"}', 'expect1': 'code=201', 'way': 'PUT', 'id': 4.0, 'url': 'http://127.0.0.1:5000/todos/todo1', 'place': '', 'expect2': 'task=put succ', 'key': 4.0, 'name': 'put请求返回task不正确'}
+2019-03-16 14:06:03,920 - root - INFO - 成功发起PUT请求，请求结果code为：201, 请求结果字段为：{'task': 'put success'}
+2019-03-16 14:06:03,921 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo1,key:4.0,参数:{"task":"put success"},请求方式：PUT
+2019-03-16 14:06:03,923 - root - INFO - 对【code】断言,断言结果--预期值201 == 实际值201
+2019-03-16 14:06:03,924 - root - WARNING - 对【task】字段断言,断言结果--预期值put succ != 实际值put success
+2019-03-16 14:06:03,924 - root - INFO - 测试用例执行完毕
+2019-03-16 14:06:03,925 - root - INFO - ----------------------------------
+2019-03-16 14:06:03,925 - root - INFO - 测试用例开始执行
+2019-03-16 14:06:03,926 - root - INFO - 获取用例数据:{'param': '{"task":"update success"}', 'expect1': 'code=201', 'way': 'PUT', 'id': 5.0, 'url': 'http://127.0.0.1:5000/todos/todo2', 'place': 'database', 'expect2': 'task=update success', 'key': 5.0, 'name': 'put请求返回resultcode和task正确'}
+2019-03-16 14:06:03,933 - root - INFO - 当前接口涉及数据库：orderdb
+2019-03-16 14:06:03,997 - root - INFO - 成功登录数据库：orderdb，版本为：8.0.11，执行SQL：select content from blog_blog where id = '7'

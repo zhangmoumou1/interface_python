@@ -62,7 +62,10 @@
 1.在实际工作中测试用例不可能只写在一个Excel中，支持读取多个<br>
 2.更改[get_excel.py](https://github.com/zhangmoumou1/interface_python/blob/master/Public/get_excel.py)，从指定文件夹下获取Excel文件，读取所有用例存到列表里<br>
 3.注意Excel文件的命名，以实际代码处理为准<br>
+### 2019.05.26---维持接口登录状态请求接口<br>
+在请求接口时一般会先要登录，大家可以在请求前先去登录并获取到cookies，然后把cookies传进get、post请求操作内，每次跑自动化去执行一次登录获取cookies即可<br>
+写成全局变量或者类属性调用<br>
 <br>
 <br>
 
-### 有问题QQ：1392364470，觉得不错的Star一下我哦!
+### 有问题QQ：1392364470，觉得不错的Star一下哦!更多干货可看个人博客：http://www.zhangyanc.club/

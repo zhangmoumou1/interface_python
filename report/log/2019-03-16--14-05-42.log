@@ -1,0 +1,9 @@
+2019-03-16 14:05:42,003 - root - INFO - 请求传入数据：url:http://127.0.0.1:5000/todos/todo1,key:4.0,参数:{"task":"put success"},请求方式：PUT
+2019-03-16 14:05:42,005 - root - INFO - 测试用例执行完毕
+2019-03-16 14:05:42,007 - root - INFO - ----------------------------------
+2019-03-16 14:05:42,009 - root - INFO - 测试用例开始执行
+2019-03-16 14:05:42,011 - root - INFO - 获取用例数据:{'expect2': 'task=update success', 'name': 'put请求返回resultcode和task正确', 'id': 5.0, 'url': 'http://127.0.0.1:5000/todos/todo2', 'key': 5.0, 'expect1': 'code=201', 'param': '{"task":"update success"}', 'place': 'database', 'way': 'PUT'}
+2019-03-16 14:05:42,018 - root - INFO - 当前接口涉及数据库：orderdb
+2019-03-16 14:05:42,072 - root - INFO - 成功登录数据库：orderdb，版本为：8.0.11，执行SQL：select content from blog_blog where id = '7'
+2019-03-16 14:05:42,082 - root - INFO - 查询结果：{"task":"update success"}
+2019-03-16 14:05:42,083 - root - INFO - 数据格式为：{"task":"update success"}

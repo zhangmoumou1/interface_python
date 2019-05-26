@@ -4,6 +4,7 @@ import os
 import pymysql
 from Branch.log import Log
 from config.readyaml import Getyaml
+import redis
 
 # 获取当前脚本所在文件夹路径
 curPath = os.path.dirname(os.path.realpath(__file__))
@@ -53,6 +54,16 @@ class Operate_db():
                 raise
         self.db.close()
 
+
+class Operate_redis():
+
+    def connect(self):
+        r = redis.Redis(host='116.62.201.163', port=6379, password='123456', db=1)
+        r.set('name', 'root')
+        print(r.get('name').decode('utf8'))
+
 # interface_url = "http://127.0.0.1:5000/todos/todo2"
 # getdb = "orderdb"
 # Operate_db(getdb,interface_url).Perform()
+
+Operate_redis().connect()

@@ -25,3 +25,8 @@ orderdb:
      - testdb
      - testdb123
      - orderdb
+
+redis:
+     - 116.62.201.163
+     - 6379
+     - 123456
