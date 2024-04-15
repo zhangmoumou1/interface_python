@@ -1,71 +1,74 @@
 # interface-python
-×¢ÒâÊÂÏî£º<br>
-<br>
-ÔËĞĞ´ËÏîÄ¿Ç°£¬ÏÈĞŞ¸Ä[config.ini](https://github.com/zhangmoumou1/interface_python/blob/master/config/config.ini)µÄÂ·¾¶£¬´ËÂ·¾¶ÎªÏîÄ¿±¾µØÂ·¾¶£»´Ë½Ó¿ÚÊı¾İÎª×Öµä¸ñÊ½£¬ÓÃµ½Êµ¼ÊÏîÄ¿ÖĞÇë×ª»»³Éjson¡¢xml»òÆäËû¸ñÊ½<br>
-## Ò»¡¢ÊµÏÖ·½·¨<br>
-1.Í¨¹ıpython+flask±àĞ´Restful API£¬·½±ãµ÷ÊÔ´Ë¿ò¼Ü<br>
-<br>
-2.ÔËĞĞRestful_ApiÏÂµÄ[resfulapi.py](https://github.com/zhangmoumou1/interface_python/blob/master/Restful_Api/resfulapi.py)£¬¿ÉÏÈÍ¨¹ıpostman»òÆäËû½Ó¿Ú¹¤¾ß×Ô²â½Ó¿ÚÊÇ·ñÔËĞĞÕı³££¬Í£Ö¹ÔËĞĞ¿É½áÊø½ø³Ì£¬<br>
-¾ßÌåÇëÇó½á¹û¿É²é¿´²©¿Íhttp://www.zhangyanc.club/blog/82<br>
-<br>
-3.Ê¹ÓÃpythonµÄrequestsÄ£¿éÇëÇó½Ó¿Ú£¬¹Ù·½ÎÄµµhttp://docs.python-requests.org/zh_CN/latest/user/quickstart.html<br>
-<br>
-4.ÕâÀïÊ¹ÓÃddtÊı¾İÇı¶¯¶ÁÈ¡ExcelÖĞµÄ²âÊÔÓÃÀıÖ´ĞĞ<br>
-<br>
-5.Êä³ö²âÊÔ±¨¸æºÍÈÕÖ¾<br>
 
-## ¶ş¡¢¿ò¼ÜÄ¿Â¼µÄ½²½â<br>
+## ğŸ‰ å½“å‰é¡¹ç›®ä¸ºæ—©å¹´é¡¹ç›®ï¼Œç°å·²æ›´æ–°ä¼˜åŒ–ï¼Œè¯·ç§»è‡³é¡¹ç›®https://github.com/zhangmoumou1/TestApiFramework
+
+æ³¨æ„äº‹é¡¹ï¼š<br>
+<br>
+è¿è¡Œæ­¤é¡¹ç›®å‰ï¼Œå…ˆä¿®æ”¹[config.ini](https://github.com/zhangmoumou1/interface_python/blob/master/config/config.ini)çš„è·¯å¾„ï¼Œæ­¤è·¯å¾„ä¸ºé¡¹ç›®æœ¬åœ°è·¯å¾„ï¼›æ­¤æ¥å£æ•°æ®ä¸ºå­—å…¸æ ¼å¼ï¼Œç”¨åˆ°å®é™…é¡¹ç›®ä¸­è¯·è½¬æ¢æˆjsonã€xmlæˆ–å…¶ä»–æ ¼å¼<br>
+## ä¸€ã€å®ç°æ–¹æ³•<br>
+1.é€šè¿‡python+flaskç¼–å†™Restful APIï¼Œæ–¹ä¾¿è°ƒè¯•æ­¤æ¡†æ¶<br>
+<br>
+2.è¿è¡ŒRestful_Apiä¸‹çš„[resfulapi.py](https://github.com/zhangmoumou1/interface_python/blob/master/Restful_Api/resfulapi.py)ï¼Œå¯å…ˆé€šè¿‡postmanæˆ–å…¶ä»–æ¥å£å·¥å…·è‡ªæµ‹æ¥å£æ˜¯å¦è¿è¡Œæ­£å¸¸ï¼Œåœæ­¢è¿è¡Œå¯ç»“æŸè¿›ç¨‹ï¼Œ<br>
+å…·ä½“è¯·æ±‚ç»“æœå¯æŸ¥çœ‹åšå®¢http://www.zhangyanc.club/blog/82<br>
+<br>
+3.ä½¿ç”¨pythonçš„requestsæ¨¡å—è¯·æ±‚æ¥å£ï¼Œå®˜æ–¹æ–‡æ¡£http://docs.python-requests.org/zh_CN/latest/user/quickstart.html<br>
+<br>
+4.è¿™é‡Œä½¿ç”¨ddtæ•°æ®é©±åŠ¨è¯»å–Excelä¸­çš„æµ‹è¯•ç”¨ä¾‹æ‰§è¡Œ<br>
+<br>
+5.è¾“å‡ºæµ‹è¯•æŠ¥å‘Šå’Œæ—¥å¿—<br>
+
+## äºŒã€æ¡†æ¶ç›®å½•çš„è®²è§£<br>
 ![no view](https://github.com/zhangmoumou1/interface_python/blob/master/readme/%E6%9E%B6%E6%9E%84%E5%9B%BE.jpg)<br>
 <br>
-1.PublicºÍbranchÎÄ¼ş¼ĞÖ÷ÒªĞ´Ò»Ğ©¹«¹²¡¢´¦Àí·½·¨,ÈçÇëÇóµÄ¶ş´Î·â×°¡¢»ñÈ¡ExcelÊı¾İ¡¢ÈÕÖ¾Êä³ö¡¢²âÊÔ±¨¸æÓÅ»¯,ÅäÖÃÎÄ¼ş¶ÁÈ¡µÈ;<br>
+1.Publicå’Œbranchæ–‡ä»¶å¤¹ä¸»è¦å†™ä¸€äº›å…¬å…±ã€å¤„ç†æ–¹æ³•,å¦‚è¯·æ±‚çš„äºŒæ¬¡å°è£…ã€è·å–Excelæ•°æ®ã€æ—¥å¿—è¾“å‡ºã€æµ‹è¯•æŠ¥å‘Šä¼˜åŒ–,é…ç½®æ–‡ä»¶è¯»å–ç­‰;<br>
 <br>
-2.Restful_ApiÎÄ¼ş¼ĞÎª½Ó¿ÚµÄÊµÏÖ£¬ÔËĞĞ[resfulapi.py](https://github.com/zhangmoumou1/interface_python/blob/master/Restful_Api/resfulapi.py),Í¨¹ıpostmanÇëÇóÑéÖ¤;<br>
+2.Restful_Apiæ–‡ä»¶å¤¹ä¸ºæ¥å£çš„å®ç°ï¼Œè¿è¡Œ[resfulapi.py](https://github.com/zhangmoumou1/interface_python/blob/master/Restful_Api/resfulapi.py),é€šè¿‡postmanè¯·æ±‚éªŒè¯;<br>
 <br>
 ![no view](https://github.com/zhangmoumou1/interface_python/blob/master/readme/postman.jpg)<br>
 <br>
-3.configÎÄ¼ş¼ĞÓÃÀı¹ÜÀíÂ·¾¶,[config.ini](https://github.com/zhangmoumou1/interface_python/blob/master/config/config.ini)ÎªÏîÄ¿µÄÖ÷Â·¾¶,[globalparam.py](https://github.com/zhangmoumou1/interface_python/blob/master/config/globalparam.py)ÎªÈÕÖ¾ÎÄ¼ş¡¢²âÊÔÓÃÀı¶ÁÈ¡ºÍ´æ´¢µÄÂ·¾¶;<br>
+3.configæ–‡ä»¶å¤¹ç”¨ä¾‹ç®¡ç†è·¯å¾„,[config.ini](https://github.com/zhangmoumou1/interface_python/blob/master/config/config.ini)ä¸ºé¡¹ç›®çš„ä¸»è·¯å¾„,[globalparam.py](https://github.com/zhangmoumou1/interface_python/blob/master/config/globalparam.py)ä¸ºæ—¥å¿—æ–‡ä»¶ã€æµ‹è¯•ç”¨ä¾‹è¯»å–å’Œå­˜å‚¨çš„è·¯å¾„;<br>
 <br>
-4.reportÎÄ¼ş¼ĞÏÂ´æ·ÅÈÕÖ¾ºÍ²âÊÔ±¨¸æ;<br>
+4.reportæ–‡ä»¶å¤¹ä¸‹å­˜æ”¾æ—¥å¿—å’Œæµ‹è¯•æŠ¥å‘Š;<br>
 <br>
 ![no view](https://github.com/zhangmoumou1/interface_python/blob/master/readme/%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A.jpg)<br>
 <br>
 ![no view](https://github.com/zhangmoumou1/interface_python/blob/master/readme/%E6%97%A5%E5%BF%97.jpg)<br>
 <br>
-5.testCaseÎÄ¼ş¼ĞĞ´ÁË²âÊÔÓÃÀı,Í¨¹ıddtÊı¾İÇı¶¯¶ÁÈ¡ExcelÎÄ¼ş,ÓÃunittestµ¥Ôª²âÊÔ¿ò¼Ü¹ÜÀíÓÃÀı;<br>
+5.testCaseæ–‡ä»¶å¤¹å†™äº†æµ‹è¯•ç”¨ä¾‹,é€šè¿‡ddtæ•°æ®é©±åŠ¨è¯»å–Excelæ–‡ä»¶,ç”¨unittestå•å…ƒæµ‹è¯•æ¡†æ¶ç®¡ç†ç”¨ä¾‹;<br>
 <br>
-6.testdataÎÄ¼şÏÂÊÇ²âÊÔÓÃÀı;<br>
+6.testdataæ–‡ä»¶ä¸‹æ˜¯æµ‹è¯•ç”¨ä¾‹;<br>
 <br>
-7.ÔËĞĞ[run_ddt_case.py](https://github.com/zhangmoumou1/interface_python/blob/master/run_ddt_case.py)Ö´ĞĞÓÃÀı(Èç¹ûÕû¸öµ÷ÓÃÁ÷³Ì²»Ì«¶®µÄ¿ÉÒÔ¿´readmeÏÂµÄxmindÁ÷³ÌÍ¼)¡£<br>
+7.è¿è¡Œ[run_ddt_case.py](https://github.com/zhangmoumou1/interface_python/blob/master/run_ddt_case.py)æ‰§è¡Œç”¨ä¾‹(å¦‚æœæ•´ä¸ªè°ƒç”¨æµç¨‹ä¸å¤ªæ‡‚çš„å¯ä»¥çœ‹readmeä¸‹çš„xmindæµç¨‹å›¾)ã€‚<br>
 
-## Èı¡¢¸üĞÂÓÅ»¯ÖĞ. . .
-### 2018.11.02---¸üĞÂflask½Ó¿Ú´úÂë£¬ÓÃÀıÔö¼Ópost¡¢put¡¢deleteÇëÇó·½Ê½<br>
-1.ÔÚ´ËÖ®Ç°Ö»ÓĞµ¥Ò»µÄget½Ó¿ÚÇëÇó£¬ÍêÉÆÆäËû¼¸ÖÖÇëÇó·½Ê½<br>
-2.ÓÃÀıÖĞ°üÀ¨ÇëÇó³É¹¦ºÍÊ§°ÜµÄ°¸Àı<br>
-### 2018.11.04---ÓÅ»¯Ö§³Ö¶à¶ÏÑÔ£¬¿É¶Ôresultcode¡¢Ö¸¶¨·µ»Ø×Ö¶Î½øĞĞ¶ÏÑÔ<br>
-ÊµÏÖÂß¼­£º<br>
-1.ExcelÖĞĞÂÔö"ÆÚÍû2"ÁĞ£¬Ìá¹©¶ÏÑÔÆÚÍûÖµ<br>
-2.ÇëÇóÏìÓ¦×Ö¶ÎÎª×Öµä¸ñÊ½£¬Ö¸¶¨×Ö¶Î¶ÏÑÔ£¬Ç°ÌáĞè´ÓExcelÆÚÍûÖµÖĞ»ñÈ¡keyÖµ£¬À´Ö¸¶¨·µ»ØÇëÇóµÄvalueÖµ<br>
-3.Èç½Ó¿ÚÖ»¶Ôresultcode¶ÏÑÔ£¬¶ÔExcel¡°ÆÚÍû2¡±ÁĞ²ÎÊıÎª"param=null"×÷ÎªÅĞ¶ÏÒÀ¾İ£¬Ïê¼û[ddt_case.py](https://github.com/zhangmoumou1/interface_python/blob/master/testCase/ddt_case.py)´úÂë<br>
-4.ĞÂÔö¶à¸ö¶ÏÑÔĞèĞŞ¸Ä´úÂë<br>
-### 2018.11.05---Ôö¼Ómysql¡¢oracle¡¢SQLserverÊı¾İ¿âµÄ²Ù×÷<br>
-ÊµÏÖÂß¼­£º<br>
-1.ĞÂÔö[readyaml.py](https://github.com/zhangmoumou1/interface_python/blob/master/config/readyaml.py)¡¢[db.yaml](https://github.com/zhangmoumou1/interface_python/blob/master/config/db.yaml)¡¢[operate_db.py](https://github.com/zhangmoumou1/interface_python/blob/master/Public/operate_db.py)<br>
-1.Ê¹ÓÃyamlÎÄ¼ş¹ÜÀíÊı¾İ¿âÁ¬½ÓĞÅÏ¢£¨´ËÎª¸öÈË·şÎñÆ÷µÄÊı¾İ¿âÇë²»ÒªËæÒâ¸Ä¶¯Êı¾İ£©<br>
-2.Í¨¹ı½Ó¿ÚurlºÍÊı¾İ¿âÃû¹ØÁª£¬À´ÅĞ¶ÏÖ´ĞĞ½Ó¿ÚĞè²Ù×÷¶ÔÓ¦¿â<br>
-3.Í¨¹ı½Ó¿ÚurlºÍSQLÓï¾ä¹ØÁª£¬À´ÅĞ¶ÏÖ´ĞĞ½Ó¿ÚËùÒªÖ´ĞĞµÄSQL<br>
-4.ÔÚ[select_request.py](https://github.com/zhangmoumou1/interface_python/blob/master/Public/select_request.py)ÖĞ½øĞĞÊı¾İ¿â²Ù×÷»ñÈ¡ÇëÇóÊı¾İ<br>
-### 2018.11.07---²âÊÔ±¨¸æÓÃÀıÃûµÄÓÅ»¯ºÍ½çÃæÃÀ»¯<br>
-1.Ê¹ÓÃÏÖÓĞµÄddtÊı¾İÇı¶¯²»ÄÜÌåÏÖ¾ßÌåÓÃÀıÃû³Æ£¬ĞŞ¸ÄddtÔ´Âë´ÓExcelÖĞ´«ÈëÓÃÀıÃû£¬²Î¿¼https://www.cnblogs.com/Simple-Small/p/9230382.html<br>
-2.ÔÚÒÔÍù²âÊÔ±¨¸æÉÏÔö¼ÓÍ¨¹ı°Ù·Ö±ÈºÍÆäËûÓÅ»¯<br>
-### 2018.12.07---Ö§³Ö¶ÁÈ¡¶à¸öExcelÎÄ¼ş<br>
-ÊµÏÖÂß¼­£º<br>
-1.ÔÚÊµ¼Ê¹¤×÷ÖĞ²âÊÔÓÃÀı²»¿ÉÄÜÖ»Ğ´ÔÚÒ»¸öExcelÖĞ£¬Ö§³Ö¶ÁÈ¡¶à¸ö<br>
-2.¸ü¸Ä[get_excel.py](https://github.com/zhangmoumou1/interface_python/blob/master/Public/get_excel.py)£¬´ÓÖ¸¶¨ÎÄ¼ş¼ĞÏÂ»ñÈ¡ExcelÎÄ¼ş£¬¶ÁÈ¡ËùÓĞÓÃÀı´æµ½ÁĞ±íÀï<br>
-3.×¢ÒâExcelÎÄ¼şµÄÃüÃû£¬ÒÔÊµ¼Ê´úÂë´¦ÀíÎª×¼<br>
-### 2019.05.26---Î¬³Ö½Ó¿ÚµÇÂ¼×´Ì¬ÇëÇó½Ó¿Ú<br>
-ÔÚÇëÇó½Ó¿ÚÊ±Ò»°ã»áÏÈÒªµÇÂ¼£¬´ó¼Ò¿ÉÒÔÔÚÇëÇóÇ°ÏÈÈ¥µÇÂ¼²¢»ñÈ¡µ½cookies£¬È»ºó°Ñcookies´«½øget¡¢postÇëÇó²Ù×÷ÄÚ£¬Ã¿´ÎÅÜ×Ô¶¯»¯È¥Ö´ĞĞÒ»´ÎµÇÂ¼»ñÈ¡cookies¼´¿ÉĞ´³ÉÈ«¾Ö±äÁ¿»òÕßÀàÊôĞÔµ÷ÓÃ
+## ä¸‰ã€æ›´æ–°ä¼˜åŒ–ä¸­. . .
+### 2018.11.02---æ›´æ–°flaskæ¥å£ä»£ç ï¼Œç”¨ä¾‹å¢åŠ postã€putã€deleteè¯·æ±‚æ–¹å¼<br>
+1.åœ¨æ­¤ä¹‹å‰åªæœ‰å•ä¸€çš„getæ¥å£è¯·æ±‚ï¼Œå®Œå–„å…¶ä»–å‡ ç§è¯·æ±‚æ–¹å¼<br>
+2.ç”¨ä¾‹ä¸­åŒ…æ‹¬è¯·æ±‚æˆåŠŸå’Œå¤±è´¥çš„æ¡ˆä¾‹<br>
+### 2018.11.04---ä¼˜åŒ–æ”¯æŒå¤šæ–­è¨€ï¼Œå¯å¯¹resultcodeã€æŒ‡å®šè¿”å›å­—æ®µè¿›è¡Œæ–­è¨€<br>
+å®ç°é€»è¾‘ï¼š<br>
+1.Excelä¸­æ–°å¢"æœŸæœ›2"åˆ—ï¼Œæä¾›æ–­è¨€æœŸæœ›å€¼<br>
+2.è¯·æ±‚å“åº”å­—æ®µä¸ºå­—å…¸æ ¼å¼ï¼ŒæŒ‡å®šå­—æ®µæ–­è¨€ï¼Œå‰æéœ€ä»ExcelæœŸæœ›å€¼ä¸­è·å–keyå€¼ï¼Œæ¥æŒ‡å®šè¿”å›è¯·æ±‚çš„valueå€¼<br>
+3.å¦‚æ¥å£åªå¯¹resultcodeæ–­è¨€ï¼Œå¯¹Excelâ€œæœŸæœ›2â€åˆ—å‚æ•°ä¸º"param=null"ä½œä¸ºåˆ¤æ–­ä¾æ®ï¼Œè¯¦è§[ddt_case.py](https://github.com/zhangmoumou1/interface_python/blob/master/testCase/ddt_case.py)ä»£ç <br>
+4.æ–°å¢å¤šä¸ªæ–­è¨€éœ€ä¿®æ”¹ä»£ç <br>
+### 2018.11.05---å¢åŠ mysqlã€oracleã€SQLserveræ•°æ®åº“çš„æ“ä½œ<br>
+å®ç°é€»è¾‘ï¼š<br>
+1.æ–°å¢[readyaml.py](https://github.com/zhangmoumou1/interface_python/blob/master/config/readyaml.py)ã€[db.yaml](https://github.com/zhangmoumou1/interface_python/blob/master/config/db.yaml)ã€[operate_db.py](https://github.com/zhangmoumou1/interface_python/blob/master/Public/operate_db.py)<br>
+1.ä½¿ç”¨yamlæ–‡ä»¶ç®¡ç†æ•°æ®åº“è¿æ¥ä¿¡æ¯ï¼ˆæ­¤ä¸ºä¸ªäººæœåŠ¡å™¨çš„æ•°æ®åº“è¯·ä¸è¦éšæ„æ”¹åŠ¨æ•°æ®ï¼‰<br>
+2.é€šè¿‡æ¥å£urlå’Œæ•°æ®åº“åå…³è”ï¼Œæ¥åˆ¤æ–­æ‰§è¡Œæ¥å£éœ€æ“ä½œå¯¹åº”åº“<br>
+3.é€šè¿‡æ¥å£urlå’ŒSQLè¯­å¥å…³è”ï¼Œæ¥åˆ¤æ–­æ‰§è¡Œæ¥å£æ‰€è¦æ‰§è¡Œçš„SQL<br>
+4.åœ¨[select_request.py](https://github.com/zhangmoumou1/interface_python/blob/master/Public/select_request.py)ä¸­è¿›è¡Œæ•°æ®åº“æ“ä½œè·å–è¯·æ±‚æ•°æ®<br>
+### 2018.11.07---æµ‹è¯•æŠ¥å‘Šç”¨ä¾‹åçš„ä¼˜åŒ–å’Œç•Œé¢ç¾åŒ–<br>
+1.ä½¿ç”¨ç°æœ‰çš„ddtæ•°æ®é©±åŠ¨ä¸èƒ½ä½“ç°å…·ä½“ç”¨ä¾‹åç§°ï¼Œä¿®æ”¹ddtæºç ä»Excelä¸­ä¼ å…¥ç”¨ä¾‹åï¼Œå‚è€ƒhttps://www.cnblogs.com/Simple-Small/p/9230382.html<br>
+2.åœ¨ä»¥å¾€æµ‹è¯•æŠ¥å‘Šä¸Šå¢åŠ é€šè¿‡ç™¾åˆ†æ¯”å’Œå…¶ä»–ä¼˜åŒ–<br>
+### 2018.12.07---æ”¯æŒè¯»å–å¤šä¸ªExcelæ–‡ä»¶<br>
+å®ç°é€»è¾‘ï¼š<br>
+1.åœ¨å®é™…å·¥ä½œä¸­æµ‹è¯•ç”¨ä¾‹ä¸å¯èƒ½åªå†™åœ¨ä¸€ä¸ªExcelä¸­ï¼Œæ”¯æŒè¯»å–å¤šä¸ª<br>
+2.æ›´æ”¹[get_excel.py](https://github.com/zhangmoumou1/interface_python/blob/master/Public/get_excel.py)ï¼Œä»æŒ‡å®šæ–‡ä»¶å¤¹ä¸‹è·å–Excelæ–‡ä»¶ï¼Œè¯»å–æ‰€æœ‰ç”¨ä¾‹å­˜åˆ°åˆ—è¡¨é‡Œ<br>
+3.æ³¨æ„Excelæ–‡ä»¶çš„å‘½åï¼Œä»¥å®é™…ä»£ç å¤„ç†ä¸ºå‡†<br>
+### 2019.05.26---ç»´æŒæ¥å£ç™»å½•çŠ¶æ€è¯·æ±‚æ¥å£<br>
+åœ¨è¯·æ±‚æ¥å£æ—¶ä¸€èˆ¬ä¼šå…ˆè¦ç™»å½•ï¼Œå¤§å®¶å¯ä»¥åœ¨è¯·æ±‚å‰å…ˆå»ç™»å½•å¹¶è·å–åˆ°cookiesï¼Œç„¶åæŠŠcookiesä¼ è¿›getã€postè¯·æ±‚æ“ä½œå†…ï¼Œæ¯æ¬¡è·‘è‡ªåŠ¨åŒ–å»æ‰§è¡Œä¸€æ¬¡ç™»å½•è·å–cookieså³å¯å†™æˆå…¨å±€å˜é‡æˆ–è€…ç±»å±æ€§è°ƒç”¨
 <br>
 <br>
 
-### ÓĞÎÊÌâQQ£º1392364470£¬¾õµÃ²»´íµÄStarÒ»ÏÂÅ¶!<br>
-### ¸ü¶à¸É»õ¿É¿´¸öÈË²©¿Í£ºhttp://www.zhangyanc.club/
+### æœ‰é—®é¢˜QQï¼š1392364470ï¼Œè§‰å¾—ä¸é”™çš„Starä¸€ä¸‹å“¦!<br>
+### æ›´å¤šå¹²è´§å¯çœ‹ä¸ªäººåšå®¢ï¼šhttp://www.zhangyanc.club/
