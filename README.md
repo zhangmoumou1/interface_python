@@ -1,4 +1,4 @@
-## 🎉 当前项目为早年项目，现已更新优化，可移至新项目https://github.com/zhangmoumou1/TestApiFramework
+## 🎉 当前项目为早年项目，现已更新优化，新项目https://github.com/zhangmoumou1/TestApiFramework
 
 ---
 
